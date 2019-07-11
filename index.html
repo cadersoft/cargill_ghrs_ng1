@@ -8,32 +8,14 @@
     <meta name="HandheldFriendly" content="true" />
     <!-- <link rel="stylesheet" type="text/css" href="plugins/animate.css"> -->
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="plugins/aos.css">
     <link rel="stylesheet" type="text/css" href="scss/style.css">
     <title>Cargill</title>
 </head>
 
 <body>
-    <div id="status">Status Bar</div>
-    <div class="preload anim ">
-        <div class="logo anim">
-            <img src="images/logo.png" alt="Cargill Logo">
-        </div>
-        <div class="load_text">
-            <span class="letter">L</span>
-            <span class="letter">o</span>
-            <span class="letter">a</span>
-            <span class="letter">d</span>
-            <span class="letter">i</span>
-            <span class="letter">n</span>
-            <span class="letter">g</span>
-            <span class="letter">.</span>
-            <span class="letter">.</span>
-            <span class="letter">.</span>
-        </div>
-    </div>
-
     <div class="homepage" ng-app="app" ng-controller="controller">
-        <div class="fixed-nav">
+        <!--<div class="fixed-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
                     <a class="navbar-brand" href="#"></a>
@@ -53,17 +35,17 @@
                             <li class="nav-item"><a class="nav-link" href="#">Organization Design</a></li>
                             <!-- <li class="nav-item"><a class="nav-link" href="#">Toolkit</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Training</a></li> -->
-                        </ul>
-                        <!-- <form class="form-inline my-2 my-lg-0">
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
                               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                               <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                          </form> -->
+                          </form> 
                     </div>
                 </nav>
             </div>
         </div>
         <div class="nav-height"></div>
-
+    -->
         <div class="image_slide" data-ride="carousel">
             <div class="top_banner">
                 <h1 class="text-center text-white">
@@ -79,11 +61,11 @@
             <div class="container p-space">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Introduction</h2>
+                        <h2 data-aos="fade-right">Introduction</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" data-aos="fade-right">
                         <p>The purpose of this playbook is to provide a project based framework that outlines a
                             consistent and effective
                             process for HR activity in business reorganizations, for HR teams to leverage in planning
@@ -121,7 +103,7 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <img class="full-width" src="images/intro.png" alt="">
+                        <img data-aos="fade-left" class="full-width" src="images/intro.png" alt="">
                     </div>
 
                 </div>
@@ -133,38 +115,38 @@
             <div class="container  pb-5">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card shadow-lg">
+                        <div class="card shadow-lg" data-aos="fade-up">
                             <img src="images/card_1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Partnering with Business</h5>
                                 <p class="card-text">Stakeholder involvement is critical for a successful
                                     reorganization. This section
                                     describes recommended involvement of business stakeholders.</p>
-                                <a href="#" class="btn btn-sm btn-outline-brand">More</a>
+                                <a href="#partnering" class="btn btn-sm btn-outline-brand scroll_click">More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card shadow-lg">
+                        <div class="card shadow-lg" data-aos="fade-up" data-aos-delay="250">
                             <img src="images/card_2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Reorganization HR Team</h5>
                                 <p class="card-text">Every reorganization has a specific HR team. This section describes
                                     the reorganization
                                     team structure and responsibility.</p>
-                                <a href="#" class="btn btn-sm btn-outline-brand">More</a>
+                                <a href="#hrteam" class="btn btn-sm btn-outline-brand scroll_click">More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card shadow-lg">
+                        <div class="card shadow-lg" data-aos="fade-up" data-aos-delay="500">
                             <img src="images/card_3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Responsibilities and Deliverables</h5>
                                 <p class="card-text">Each HR domain is involved in an aspect of reorganization. This
                                     section describes the
                                     roles and responsibilities of each HR domain.</p>
-                                <a href="#" class="btn btn-sm btn-outline-brand">More</a>
+                                <a href="#responsibility" class="btn btn-sm btn-outline-brand scroll_click">More</a>
                             </div>
                         </div>
                     </div>
@@ -172,19 +154,19 @@
             </div>
         </section>
 
-        <section class="bg-grey project_team">
+        <section id="partnering" class="bg-grey project_team">
             <div class="container">
                 <div class="padding_tb">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-up">
                             <h2>Partnering with the Business</h2>
                             <h6>Recommended involvement of business stakeholders</h6>
                         </div>
                     </div>
-                    
+
                     <div class="popup relative" ng-class="{'hide' : selectedpopup == 0}">
                         <div class="popup_panel  ">
-                            <button type="button" class="close" ng-click="selectedpopup = 0" aria-label="Close" >
+                            <button type="button" class="close" ng-click="selectedpopup = 0" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <div ng-if="selectedpopup == 1">
@@ -250,42 +232,45 @@
 
                     <div class="row mt-5">
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" ng-click="selectedpopup = 1">
+                            <div class="clickable text-center" data-aos="fade-up" ng-click="selectedpopup = 1">
                                 <h4>Business HR Leader </h4>
                                 <img src="images/people1.png" ng-if="selectedpopup == 0 || selectedpopup == 1"
                                     class="d-none d-lg-block" alt="">
-                                <img src="images/people1_selected.png"
-                                    ng-if="selectedpopup != 0 && selectedpopup != 1" class="d-none d-lg-block" alt="">
+                                <img src="images/people1_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 1"
+                                    class="d-none d-lg-block" alt="">
                                 <img src="images/user_1_md.png" class="d-block d-md-block d-lg-none" alt="">
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" ng-click="selectedpopup = 2">
+                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="250"
+                                ng-click="selectedpopup = 2">
                                 <h4>Business Project Design Team </h4>
                                 <img src="images/people2.png" ng-if="selectedpopup == 0 || selectedpopup == 2"
                                     class="d-none d-lg-block" alt="">
-                                <img src="images/people2_selected.png"
-                                    ng-if="selectedpopup != 0 && selectedpopup != 2" class="d-none d-lg-block" alt="">
+                                <img src="images/people2_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 2"
+                                    class="d-none d-lg-block" alt="">
                                 <img src="images/user_2_md.png" class="d-block d-md-block d-lg-none" alt="">
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" ng-click="selectedpopup = 3">
+                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="500"
+                                ng-click="selectedpopup = 3">
                                 <h4>Business Leaders</h4>
                                 <img src="images/people3.png" ng-if="selectedpopup == 0 || selectedpopup == 3"
                                     class="d-none d-lg-block" alt="">
-                                <img src="images/people3_selected.png"
-                                    ng-if="selectedpopup != 0 && selectedpopup != 3" class="d-none d-lg-block" alt="">
+                                <img src="images/people3_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 3"
+                                    class="d-none d-lg-block" alt="">
                                 <img src="images/user_3_md.png" class="d-block d-md-block d-lg-none" alt="">
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" ng-click="selectedpopup = 4">
+                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="750"
+                                ng-click="selectedpopup = 4">
                                 <h4>Managers</h4>
                                 <img src="images/people4.png" ng-if="selectedpopup == 0 || selectedpopup == 4"
                                     class="d-none d-lg-block" alt="">
-                                <img src="images/people4_selected.png"
-                                    ng-if="selectedpopup != 0 && selectedpopup != 4" class="d-none d-lg-block" alt="">
+                                <img src="images/people4_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 4"
+                                    class="d-none d-lg-block" alt="">
                                 <img src="images/user_4_md.png" class="d-block d-md-block d-lg-none" alt="">
                             </div>
                         </div>
@@ -298,29 +283,38 @@
         </section>
 
 
-        <section class="">
+        <section id="hrteam" class="">
             <div class="padding_tb text-brand">
                 <div class="container">
-                    <h2>HR Business Reorganization Project Team</h2>
-                    <p><strong>For every reorganization there is an HR team structure and responsibilities</strong></p>
+                    <div data-aos="fade-up">
+                        <h2>HR Business Reorganization Project Team</h2>
+                        <p><strong>For every reorganization there is an HR team structure and responsibilities</strong>
+                        </p>
+
+                        <div class="instr mt-5 mb-3">
+                            Click below images to learn more.
+                        </div>
+                    </div>
+
                     <div class="tab">
                         <div class="tab-head">
-                            <div class="item" ng-repeat="item in tabs" ng-click="tabClick($index)" ng-class="{'active' : selectedTab == $index}">
+                            <div class="item" ng-repeat="item in tabs" ng-click="tabClick($index)" data-aos="fade-up"
+                                data-aos-delay="{{$index * 250}}" ng-class="{'active' : selectedTab == $index}">
                                 <img ng-src={{item.img}} alt="">
                                 <div class="head">
                                     {{item.head}} {{$index}}
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-body">
-                            <div class="item"ng-repeat="item in tabs">
+                        <div class="tab-body" data-aos="fade-up" data-aos-delay="1000">
+                            <div class="item" ng-repeat="item in tabs">
                                 <div class="body" ng-if="selectedTab == $index" ng-bind-html="item.body | to_trusted">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container mt-3">
+                    <div class="container mt-3" data-aos="fade-up" data-aos-delay="1500">
                         <div class="row">
                             <div class="col-3">
                                 <div class="cargill_box bg-brand">
@@ -421,71 +415,142 @@
         </section>
 
 
-        <section class="bg-brand">
+        <!-- Modal -->
+        <div class="modal fade" id="responsibilityModal" tabindex="-1" role="dialog"
+            aria-labelledby="responsibilityModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-brand" id="responsibilityModalTitle"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="responsibilityModalBody">
+                        <div class="child">
+                                <p class="text-brand">Onboard/ramp up of GHRS team to business requirements and needs, Talent fulfillment
+                                process definition (with business and HR experts), HR Risk and Retention Planning, Micro
+                                Org Design (Position decisions with business)</p>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Ensure an initial consult and SOW development between BHR Leader and GHRS OD.
+                                    Manages Business relationship and resourcing from GHRS to support project</p>
+                        </div>
+                        <div class="child">
+                            <ul>
+                                <li><span class="text-brand">Activity Analysis</span> – Survey, HR Analytics and Data Reporting</li>
+                                <li><span class="text-brand">Position Coordination</span> - Position Management, Job Descriptions – PDS development, Gatekeeper of accuracy and quality of PDS and  Monitors/Tracks approved mappings</li>
+                                <li><span class="text-brand">HR Data Analyst/Architect</span> - Develop plan for updates to HR systems approach and execution, documents global requirements, collects and requests bulk data changes, performs reporting and analytics as needed. Architect from PDT.</li>
+                                <li><span class="text-brand">HR Data Management Team (DMT)</span> – Employee Central New Foundation Data, Position ID Creation/Change, Employee changes/transfers as groups.</li>
+                            </ul>
+                        </div>
+                        <div class="child">
+                            <ul>
+                                <li><span class="text-brand">Benefits/Pensions</span>: Re-org employee changes – consulting </li>
+                                <li><span class="text-brand">Compensation</span>: Compensation consulting and incentive alignment including analysis, recommendation, and implementation. Market pricing, Banding, position mapping approval (with Position Coordination)</li>
+                                <li><span class="text-brand">Global Mobility</span>: Re-org employee changes – consulting</li>
+                            </ul>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Manager support with change. Some markets: execute data collection and manage employee data change requests.</p>
+                        </div>
+                        <div class="child text-brand">
+                                <p>Consult and educate on talent selection process based on country legislation and local requirements.</p>
+                                <p>Ensure proper consultation with employee representative bodies; review formal consultation documents. Support planning and execution of communications strategy. Coach, prepare and train managers to have notification conversations with employees; provide separation agreements, as needed. Consult and engage employment law as needed. Provide support and guidance to employees during the transition.</p>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Payroll, reporting at the local level, Time and Attendance – training, compliance, access, reporting</p>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Document charter/scope for HR, HR project schedule, reporting, communications, Manage execution of HR project work to accomplish scope, onboard/ramp up of GHRS team to project and HR re-org requirements and needs. May also educate IT, Finance, business stakeholders to HR processes.</p>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Consulting on recruitment strategy and fulfillment process, Execute fulfillment including assessment, post and fill open positions (Works with HR CBS on selected services)</p>
+                        </div>
+                        <div class="child">
+                            <ul>
+                                <li><span class="text-brand">OD</span>: Organizational Design - Cargill benchmarks and process for: org design, span and layers optimization. Advises on Change Management Resourcing. Change Management as related to an op model, spans and layers or org restructure business need including stakeholder and needs analysis. (May come from Global Change or GHRS) Builds org design capability in BHR and managers. Culture, strategy and planning – as needed. Manager and team effectiveness – as needed (could involve L&D)</li>
+                                <li><span class="text-brand">TM</span>: Facilitate talent assessment and review processes (selection)</li>
+                                <li><span class="text-brand">L&D</span>: Leadership development and training programs created for re-org – as needed</li>
+                            </ul>
+                        </div>
+                        <div class="child">
+                                <p class="text-brand">Key partners from other businesses and functions that are critical for success are: Communications Lead (Business), Global Change & Enablement, IT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="responsibility" class="bg-brand">
             <div class="container-fluid">
                 <div class="padding_tb">
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-up">
                         <h2>Domains: Responsibilities and Deliverables. The ‘What’</h2>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                Business HR Leader (HR Project Lead)
+                    <div class="resp" data-aos="fade-up" data-aos-delay="250">
+                        <div class="row mt-5">
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="0">
+                                    Business HR Leader (HR Project Lead)
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="1">
+                                    GHRS BRM
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="2">
+                                    CBS
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="3">
+                                    Total Rewards
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="4">
+                                    Employee Experience
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                GHRS BRM
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                CBS
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                Total Rewards
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                Employee Experience
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row mt-4">
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                ER/IR
+                        <div class="row mt-4">
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="5">
+                                    ER/IR
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="6">
+                                    HR Operations
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="7">
+                                    GHRS Project Management (PM)
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="8">
+                                    Talent Acquisition
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-gp-5">
+                                <div class="button" data-id="9">
+                                    Talent Performance
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                HR Operations
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                GHRS Project Management (PM)
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                Talent Acquisition
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-gp-5">
-                            <div class="button">
-                                Talent Performance
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-sm-4 col-gp-5 m-auto">
-                            <div class="button">
-                                Project Partners
+                        <div class="row mt-4">
+                            <div class="col-sm-4 col-gp-5 m-auto">
+                                <div class="button" data-id="10">
+                                    Project Partners
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -497,16 +562,18 @@
         <section>
             <div class="container">
                 <div class="padding_tb">
-                    <h2>What is Org Design?</h2>
-                    <p class="mt-5 mb-5">Organization Design is a proactive fact-based approach to analyze an
-                        organizational structure
-                        in terms of process, governance (decision rights), people effort, costs and operating model
-                        efficiency and
-                        effectiveness. This process ensures the business has the right capabilities and capacity to
-                        drive strategic
-                        success.</p>
+                    <div data-aos="fade-up">
+                        <h2>What is Org Design?</h2>
+                        <p class="mt-5 mb-5">Organization Design is a proactive fact-based approach to analyze an
+                            organizational structure
+                            in terms of process, governance (decision rights), people effort, costs and operating model
+                            efficiency and
+                            effectiveness. This process ensures the business has the right capabilities and capacity to
+                            drive strategic
+                            success.</p>
+                    </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" data-aos="fade-right">
                             <p>Org Design is the right solution when an organization needs</p>
                             <ul>
                                 <li>To realign their people to a new strategy, market change or adapt due to competitive
@@ -515,7 +582,7 @@
                                 <li>To optimize a current structure to be more efficient and effective</li>
                             </ul>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" data-aos="fade-up">
                             <div class="border-lr">
                                 <p>Structure is only one element of an integrated system, the other dimensions being
                                     strategy, process,
@@ -525,7 +592,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" data-aos="fade-left">
                             <p>The Global OD Org Design Toolkit provides a consistent, end-to-end process based org
                                 design methodology and
                                 toolkit for org design efforts in Cargill. It will assist in building capability in HR
@@ -536,7 +603,7 @@
                         </div>
                     </div>
 
-                    <div class="row mt-5">
+                    <div class="row mt-5" data-aos="fade-up">
                         <div class="col-12">
                             <div class="bg-brand p-5">
                                 <div class="float-left mr-5">
@@ -564,19 +631,106 @@
 
         <section>
             <div class="container-fluid">
-                <div class="mb-5">
+                <div class="mb-5" data-aos="fade-up">
                     <div class="text-center">
                         <h2>ORGANIZATION DESIGN</h2>
                         <h3>Process Overview</h3>
                     </div>
                 </div>
 
+                <div class="container">
+                    <div class="instr" data-aos="fade-left">
+                        Click below process to learn more.
+                    </div>
+                    <div data-aos="fade-up">
+                        <div class="process_line mt-3 ">
+                            <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
+                                    class="txt">Explore</span></div>
+                            <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true"
+                                class="process_dotted"></div>
+                            <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
+                                class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
+                            </div>
+                            <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true"
+                                class="process_dotted"></div>
+                            <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
+                                class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
+                            <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true"
+                                class="process_dotted"></div>
+                            <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
+                                class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
+                            </div>
+                        </div>
+                        <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}"
+                            data-aos-once="true">
+                            <div class="p_arrow small_arrow"
+                                ng-class="{'visited' : process_arr[0].visited, 'active':process_index == 0}"
+                                ng-click="process_index = 0; process_arr[0].visited = true; console.log( process_arr[0].visited)">
+                            </div>
+                            <div class="p_arrow normal_arrow"
+                                ng-class="{'visited' : process_arr[1].visited, 'active':process_index == 1}"
+                                ng-click="process_index = 1; process_arr[1].visited = true;">
+                                Assess
+                            </div>
+                            <div class="p_arrow medium_arrow"
+                                ng-class="{'visited' : process_arr[2].visited, 'active':process_index == 2}"
+                                ng-click="process_index = 2; process_arr[2].visited = true;"></div>
+                            <div class="p_arrow normal_arrow"
+                                ng-class="{'visited' : process_arr[2].visited, 'active':process_index == 2}"
+                                ng-click="process_index = 2; process_arr[2].visited = true;">
+                                Analyze
+                            </div>
+                            <div class="p_arrow medium_arrow"
+                                ng-class="{'visited' : process_arr[3].visited, 'active':process_index == 3}"
+                                ng-click="process_index = 3; process_arr[3].visited = true;"></div>
+                            <div class="p_arrow normal_arrow"
+                                ng-class="{'visited' : process_arr[3].visited, 'active':process_index == 3}"
+                                ng-click="process_index = 3; process_arr[3].visited = true;">
+                                Design
+                            </div>
+                            <div class="p_arrow small_arrow"
+                                ng-class="{'visited' : process_arr[4].visited, 'active':process_index == 4}"
+                                ng-click="process_index = 4; process_arr[4].visited = true;"></div>
+                            <div class="p_arrow normal_arrow"
+                                ng-class="{'visited' : process_arr[5].visited, 'active':process_index == 5}"
+                                ng-click="process_index = 5; process_arr[5].visited = true;">
+                                Plan
+                            </div>
+                            <div class="p_arrow small_arrow"
+                                ng-class="{'visited' : process_arr[6].visited, 'active':process_index == 6}"
+                                ng-click="process_index = 6; process_arr[6].visited = true;"></div>
+                            <div class="p_arrow normal_arrow"
+                                ng-class="{'visited' : process_arr[7].visited, 'active':process_index == 7}"
+                                ng-click="process_index = 7; process_arr[7].visited = true;">
+                                Implement
+                            </div>
+                            <div class="p_arrow medium_arrow"
+                                ng-class="{'visited' : process_arr[8].visited, 'active':process_index == 8}"
+                                ng-click="process_index = 8; process_arr[8].visited = true;"></div>
+                            <div class="p_arrow last_arrow"
+                                ng-class="{'visited' : process_arr[8].visited, 'active':process_index == 8}"
+                                ng-click="process_index = 8; process_arr[8].visited = true;">
+                                Sustain
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process_desc text-white mb-5 active" ng-if="process_index != -1"
+                        ng-bind-html="process_arr[process_index].text | to_trusted">
+
+                    </div>
+
+
+                </div>
+                <div class="instr mt-5 mb-3">
+                    Click below process title to learn more.
+                </div>
+
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-right">
                         <div class="img1 img_org"></div>
                     </div>
-                    <div class="col-6 bg-brand">
-                        <div class="p-5 process" ng-click="selectProcess(1)">
+                    <div class="col-6 bg-brand" data-aos="fade-left">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box">
@@ -596,8 +750,8 @@
 
                 <div class="row">
 
-                    <div class="col-6 ">
-                        <div class="p-5 process" ng-click="selectProcess(2)">
+                    <div class="col-6 " data-aos="fade-right">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box cargill_brand_box">
@@ -613,17 +767,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-left">
                         <div class="img2 img_org"></div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-right">
                         <div class="img3 img_org"></div>
                     </div>
-                    <div class="col-6 bg-brand">
-                        <div class="p-5 process" ng-click="selectProcess(3)">
+                    <div class="col-6 bg-brand" data-aos="fade-left">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box">
@@ -643,8 +797,8 @@
 
                 <div class="row">
 
-                    <div class="col-6">
-                        <div class="p-5 process" ng-click="selectProcess(4)">
+                    <div class="col-6" data-aos="fade-right">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box cargill_brand_box">
@@ -659,17 +813,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-left">
                         <div class="img4 img_org"></div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-right">
                         <div class="img5 img_org"></div>
                     </div>
-                    <div class="col-6 bg-brand">
-                        <div class="p-5 process" ng-click="selectProcess(5)">
+                    <div class="col-6 bg-brand" data-aos="fade-left">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box">
@@ -689,8 +843,8 @@
 
                 <div class="row">
 
-                    <div class="col-6">
-                        <div class="p-5 process" ng-click="selectProcess(6)">
+                    <div class="col-6" data-aos="fade-right">
+                        <div class="p-5 process">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="cargill_white_box cargill_brand_box">
@@ -706,7 +860,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6" data-aos="fade-left">
                         <div class="img6 img_org"></div>
                     </div>
                 </div>
@@ -721,6 +875,10 @@
     <script src="plugins/jquery-3.3.1.min.js"></script>
     <script src="plugins/angular.min.js"></script>
     <script src="plugins/anime.min.js"></script>
+    <script src="plugins/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="plugins/bootstrap/js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
