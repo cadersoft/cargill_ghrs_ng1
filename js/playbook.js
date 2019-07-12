@@ -99,7 +99,7 @@ app.controller('controller', function ($scope) {
     ]
     $scope.tabs = [
         {
-          img:"/sites/orgdevelopment/SiteAssets/working/p_images/tab1.png",
+          img:"images/tab1.png",
           head:"Business HR Leader",
           body: `
           <ul>
@@ -113,7 +113,7 @@ app.controller('controller', function ($scope) {
           </ul>`
         },
         {
-          img:"/sites/orgdevelopment/SiteAssets/working/p_images/tab2.png",
+          img:"images/tab2.png",
           head:"OD Consultant",
           body:`<ul>
           <li>Facilitates the Org Design Process as an experienced org design expert</li>
@@ -122,7 +122,7 @@ app.controller('controller', function ($scope) {
         </ul>`
         },
         {
-          img:"/sites/orgdevelopment/SiteAssets/working/p_images/tab3.png",
+          img:"images/tab3.png",
           head:"GHRS Project Manager*",
           body:`<ul>
           <li>Lead assignment of resources and responsibilities to meet HR objectives </li>
@@ -132,7 +132,7 @@ app.controller('controller', function ($scope) {
         </ul>`
         },
         {
-          img:"/sites/orgdevelopment/SiteAssets/working/p_images/tab4.png",
+          img:"images/tab4.png",
           head:"HR Teams",
           body:
           `<p>Pension & Benefits,  HR Analytics, Talent Acquisition,  Time and  Attendance/Vendor, Employee Relations/Industrial Relations,  Compensation,  Employee Experience  Change Management** , HR CBS,  Mobility,  Payroll  Local HRIS/vendor,  HR Global Data and Systems Updates*</p>
@@ -217,7 +217,8 @@ app.controller('controller', function ($scope) {
 
 $().ready(function () {
 
-    scormBroker.Complete('completed');
+    //scormBroker.Complete('completed');
+
     /*$(window).on('load', function () { // makes sure the whole site is loaded 
         setTimeout(function () {
             $(".preload").remove();
@@ -225,7 +226,15 @@ $().ready(function () {
         }, 1000)
     });*/
 
-    
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        if ( scrollTop > $("#introduction").offset().top ) { 
+            $(".top_arrow").fadeIn(1000)
+        }else
+        {
+            $(".top_arrow").fadeOut(500)
+        }
+    });
 
     $(".scroll_click").on('click', function(event) {
 
