@@ -1,0 +1,147 @@
+.process_line {
+  margin-left: 2px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*align-items: center;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.process_line .process_bar {
+  border-bottom: 10px solid #007681;
+  min-width: 134px;
+}
+
+.process_line .process_bar.bar2 {
+  min-width: 302px;
+}
+
+.process_line .process_bar .txt {
+  margin-bottom: -5px;
+  font-size: 1.5rem;
+}
+
+.process_line .process_bar.b-green2 {
+  border-color: #279988;
+}
+
+.process_line .process_dotted {
+  border-bottom: 2px dotted #279988;
+  min-width: 32px;
+  margin-bottom: 4px;
+}
+
+.process_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.small_arrow {
+  margin-left: 5px;
+  margin-right: -20px;
+  width: 20px;
+  height: 36px;
+  background-image: url("../images/arrow_1.png");
+  position: relative;
+  z-index: 1;
+}
+
+.small_arrow.visited {
+  background-image: url("../images/arrow_1_s.png");
+}
+
+.small_arrow.active {
+  background-image: url("../images/arrow_1_a.png");
+}
+
+.animate-side {
+  -webkit-animation: mover-side 0.3s infinite  alternate;
+          animation: mover-side 0.3s infinite  alternate;
+}
+
+@-webkit-keyframes mover-side {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes mover-side {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+.medium_arrow {
+  margin-left: 5px;
+  margin-right: -25px;
+  width: 27px;
+  height: 49px;
+  background-image: url("../images/arrow_3.png");
+}
+
+.medium_arrow.visited {
+  background-image: url("../images/arrow_3_s.png");
+}
+
+.medium_arrow.active {
+  background-image: url("../images/arrow_3_a.png");
+}
+
+.normal_arrow {
+  width: 160px;
+  height: 53px;
+  background-image: url("../images/arrow_2.png");
+}
+
+.normal_arrow.visited {
+  background-image: url("../images/arrow_2_s.png");
+}
+
+.normal_arrow.active {
+  background-image: url("../images/arrow_2_a.png");
+}
+
+.last_arrow {
+  width: 136px;
+  height: 53px;
+  background-image: url("../images/arrow_4.png");
+}
+
+.last_arrow.visited {
+  background-image: url("../images/arrow_4_s.png");
+}
+
+.last_arrow.active {
+  background-image: url("../images/arrow_4_a.png");
+}
+
+.p_arrow {
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  padding-top: 7px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=process.css.map */
