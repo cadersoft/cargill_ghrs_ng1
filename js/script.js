@@ -141,6 +141,17 @@ app.controller('controller', function ($scope) {
           <p>**Includes partnering with Corporate Affairs on communications</p>`
         }
       ];
+
+      $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+            console.log(scroll);
+            if(scroll>500 || scroll==undefined){
+                $scope.showUpArrow = false;
+            }else{
+                $scope.showUpArrow = true;
+            }
+            **$scope.$apply();**
+        });
 });
 
 $().ready(function () {
@@ -151,6 +162,14 @@ $().ready(function () {
             $(".homepage").fadeIn(2000);
         }, 1000)
     });*/
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > ($("#menu-tile").scrollTop() + 500) ) {
+            $('#top_arrow').fadeIn();
+        } else {
+            $('#top_arrow').fadeOut();
+        }
+    });​
 
     $(".scroll_click").on('click', function(event) {
 
@@ -181,4 +200,6 @@ $().ready(function () {
           $("#responsibilityModal").find(".child").hide();
           $("#responsibilityModal").find(".child:eq("+id+")").show();
       })
+
+   
 });

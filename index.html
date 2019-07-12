@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="plugins/animate.css"> -->
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="plugins/aos.css">
-    <link rel="stylesheet" type="text/css" href="scss/style.css">
+    <link rel="stylesheet" type="text/css" href="scss/playbook.css">
     <title>Cargill</title>
 </head>
 
@@ -52,12 +52,16 @@
                     <span class="ghrs_text_shadow">GHRS <br>REORGANIZATION</span><br>
                     <span class="play_text_shadow">PLAYBOOK</span>
                 </h1>
-                <div class="bg-bottom"></div>
+                <div class="bg-bottom text-center">
+                    <a href="#introduction" class="scroll_click">
+                        <img id="down_arrow" class="mt-5" src="images/down_arrow.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
 
 
-        <section>
+        <section id="introduction">
             <div class="container p-space">
                 <div class="row">
                     <div class="col-12">
@@ -110,9 +114,16 @@
             </div>
         </section>
 
+        <div class="top_arrow">
+            <a href="#menu-tile" class="scroll_click">
+                <img src="images/up_arrow.png" alt="">
+            </a>
+        </div>
 
-        <section>
-            <div class="container  pb-5">
+
+        <section id="menu-tile">
+            <div class="container">
+                <h2 class="mb-5">Reorganization Team and Stakeholders</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card shadow-lg" data-aos="fade-up">
@@ -152,12 +163,14 @@
                     </div>
                 </div>
             </div>
+            <div class="space-100"></div>
+            <div class="space-100"></div>
         </section>
 
-        <section id="partnering" class="bg-grey project_team">
-            <div class="container">
+        <section class=" p-space bg-grey project_team">
+            <div class="container ">
                 <div class="padding_tb">
-                    <div class="row">
+                    <div id="partnering" class="row">
                         <div class="col-12" data-aos="fade-up">
                             <h2>Partnering with the Business</h2>
                             <h6>Recommended involvement of business stakeholders</h6>
@@ -232,46 +245,55 @@
 
                     <div class="row mt-5">
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" data-aos="fade-up" ng-click="selectedpopup = 1">
-                                <h4>Business HR Leader </h4>
-                                <img src="images/people1.png" ng-if="selectedpopup == 0 || selectedpopup == 1"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/people1_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 1"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/user_1_md.png" class="d-block d-md-block d-lg-none" alt="">
+                            <div data-aos="fade-up">
+                                <div class="clickable text-center" ng-click="selectedpopup = 1">
+                                    <h4>Business HR Leader </h4>
+                                    <img src="images/people1.png" ng-if="selectedpopup == 0 || selectedpopup == 1"
+                                        class="d-none d-lg-block" alt="">
+                                    <img src="images/people1_selected.png"
+                                        ng-if="selectedpopup != 0 && selectedpopup != 1" class="d-none d-lg-block"
+                                        alt="">
+                                    <img src="images/user_1_md.png" class="d-block d-md-block d-lg-none" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="250"
-                                ng-click="selectedpopup = 2">
-                                <h4>Business Project Design Team </h4>
-                                <img src="images/people2.png" ng-if="selectedpopup == 0 || selectedpopup == 2"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/people2_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 2"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/user_2_md.png" class="d-block d-md-block d-lg-none" alt="">
+                            <div data-aos="fade-up" data-aos-delay="250">
+                                <div class="clickable text-center" ng-click="selectedpopup = 2">
+                                    <h4>Business Project Design Team </h4>
+                                    <img src="images/people2.png" ng-if="selectedpopup == 0 || selectedpopup == 2"
+                                        class="d-none d-lg-block" alt="">
+                                    <img src="images/people2_selected.png"
+                                        ng-if="selectedpopup != 0 && selectedpopup != 2" class="d-none d-lg-block"
+                                        alt="">
+                                    <img src="images/user_2_md.png" class="d-block d-md-block d-lg-none" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="500"
-                                ng-click="selectedpopup = 3">
-                                <h4>Business Leaders</h4>
-                                <img src="images/people3.png" ng-if="selectedpopup == 0 || selectedpopup == 3"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/people3_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 3"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/user_3_md.png" class="d-block d-md-block d-lg-none" alt="">
+                            <div data-aos="fade-up" data-aos-delay="500">
+                                <div class="clickable text-center" ng-click="selectedpopup = 3">
+                                    <h4>Business Leaders</h4>
+                                    <img src="images/people3.png" ng-if="selectedpopup == 0 || selectedpopup == 3"
+                                        class="d-none d-lg-block" alt="">
+                                    <img src="images/people3_selected.png"
+                                        ng-if="selectedpopup != 0 && selectedpopup != 3" class="d-none d-lg-block"
+                                        alt="">
+                                    <img src="images/user_3_md.png" class="d-block d-md-block d-lg-none" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <div class="clickable text-center" data-aos="fade-up" data-aos-delay="750"
-                                ng-click="selectedpopup = 4">
-                                <h4>Managers</h4>
-                                <img src="images/people4.png" ng-if="selectedpopup == 0 || selectedpopup == 4"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/people4_selected.png" ng-if="selectedpopup != 0 && selectedpopup != 4"
-                                    class="d-none d-lg-block" alt="">
-                                <img src="images/user_4_md.png" class="d-block d-md-block d-lg-none" alt="">
+                            <div data-aos="fade-up" data-aos-delay="750">
+                                <div class="clickable text-center" ng-click="selectedpopup = 4">
+                                    <h4>Managers</h4>
+                                    <img src="images/people4.png" ng-if="selectedpopup == 0 || selectedpopup == 4"
+                                        class="d-none d-lg-block" alt="">
+                                    <img src="images/people4_selected.png"
+                                        ng-if="selectedpopup != 0 && selectedpopup != 4" class="d-none d-lg-block"
+                                        alt="">
+                                    <img src="images/user_4_md.png" class="d-block d-md-block d-lg-none" alt="">
+                                </div>
                             </div>
                         </div>
 
@@ -302,7 +324,7 @@
                                 data-aos-delay="{{$index * 250}}" ng-class="{'active' : selectedTab == $index}">
                                 <img ng-src={{item.img}} alt="">
                                 <div class="head">
-                                    {{item.head}} {{$index}}
+                                    {{item.head}}
                                 </div>
                             </div>
                         </div>
@@ -313,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--
                     <div class="container mt-3" data-aos="fade-up" data-aos-delay="1500">
                         <div class="row">
                             <div class="col-3">
@@ -410,6 +432,8 @@
                             </div>
                         </div>
                     </div>
+-->
+
                 </div>
             </div>
         </section>
@@ -428,54 +452,89 @@
                     </div>
                     <div class="modal-body" id="responsibilityModalBody">
                         <div class="child">
-                                <p class="text-brand">Onboard/ramp up of GHRS team to business requirements and needs, Talent fulfillment
+                            <p class="text-brand">Onboard/ramp up of GHRS team to business requirements and needs,
+                                Talent fulfillment
                                 process definition (with business and HR experts), HR Risk and Retention Planning, Micro
                                 Org Design (Position decisions with business)</p>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Ensure an initial consult and SOW development between BHR Leader and GHRS OD.
-                                    Manages Business relationship and resourcing from GHRS to support project</p>
+                            <p class="text-brand">Ensure an initial consult and SOW development between BHR Leader and
+                                GHRS OD.
+                                Manages Business relationship and resourcing from GHRS to support project</p>
                         </div>
                         <div class="child">
                             <ul>
-                                <li><span class="text-brand">Activity Analysis</span> – Survey, HR Analytics and Data Reporting</li>
-                                <li><span class="text-brand">Position Coordination</span> - Position Management, Job Descriptions – PDS development, Gatekeeper of accuracy and quality of PDS and  Monitors/Tracks approved mappings</li>
-                                <li><span class="text-brand">HR Data Analyst/Architect</span> - Develop plan for updates to HR systems approach and execution, documents global requirements, collects and requests bulk data changes, performs reporting and analytics as needed. Architect from PDT.</li>
-                                <li><span class="text-brand">HR Data Management Team (DMT)</span> – Employee Central New Foundation Data, Position ID Creation/Change, Employee changes/transfers as groups.</li>
+                                <li><span class="text-brand">Activity Analysis</span> – Survey, HR Analytics and Data
+                                    Reporting</li>
+                                <li><span class="text-brand">Position Coordination</span> - Position Management, Job
+                                    Descriptions – PDS development, Gatekeeper of accuracy and quality of PDS and
+                                    Monitors/Tracks approved mappings</li>
+                                <li><span class="text-brand">HR Data Analyst/Architect</span> - Develop plan for updates
+                                    to HR systems approach and execution, documents global requirements, collects and
+                                    requests bulk data changes, performs reporting and analytics as needed. Architect
+                                    from PDT.</li>
+                                <li><span class="text-brand">HR Data Management Team (DMT)</span> – Employee Central New
+                                    Foundation Data, Position ID Creation/Change, Employee changes/transfers as groups.
+                                </li>
                             </ul>
                         </div>
                         <div class="child">
                             <ul>
-                                <li><span class="text-brand">Benefits/Pensions</span>: Re-org employee changes – consulting </li>
-                                <li><span class="text-brand">Compensation</span>: Compensation consulting and incentive alignment including analysis, recommendation, and implementation. Market pricing, Banding, position mapping approval (with Position Coordination)</li>
-                                <li><span class="text-brand">Global Mobility</span>: Re-org employee changes – consulting</li>
+                                <li><span class="text-brand">Benefits/Pensions</span>: Re-org employee changes –
+                                    consulting </li>
+                                <li><span class="text-brand">Compensation</span>: Compensation consulting and incentive
+                                    alignment including analysis, recommendation, and implementation. Market pricing,
+                                    Banding, position mapping approval (with Position Coordination)</li>
+                                <li><span class="text-brand">Global Mobility</span>: Re-org employee changes –
+                                    consulting</li>
                             </ul>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Manager support with change. Some markets: execute data collection and manage employee data change requests.</p>
+                            <p class="text-brand">Manager support with change. Some markets: execute data collection and
+                                manage employee data change requests.</p>
                         </div>
                         <div class="child text-brand">
-                                <p>Consult and educate on talent selection process based on country legislation and local requirements.</p>
-                                <p>Ensure proper consultation with employee representative bodies; review formal consultation documents. Support planning and execution of communications strategy. Coach, prepare and train managers to have notification conversations with employees; provide separation agreements, as needed. Consult and engage employment law as needed. Provide support and guidance to employees during the transition.</p>
+                            <p>Consult and educate on talent selection process based on country legislation and local
+                                requirements.</p>
+                            <p>Ensure proper consultation with employee representative bodies; review formal
+                                consultation documents. Support planning and execution of communications strategy.
+                                Coach, prepare and train managers to have notification conversations with employees;
+                                provide separation agreements, as needed. Consult and engage employment law as needed.
+                                Provide support and guidance to employees during the transition.</p>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Payroll, reporting at the local level, Time and Attendance – training, compliance, access, reporting</p>
+                            <p class="text-brand">Payroll, reporting at the local level, Time and Attendance – training,
+                                compliance, access, reporting</p>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Document charter/scope for HR, HR project schedule, reporting, communications, Manage execution of HR project work to accomplish scope, onboard/ramp up of GHRS team to project and HR re-org requirements and needs. May also educate IT, Finance, business stakeholders to HR processes.</p>
+                            <p class="text-brand">Document charter/scope for HR, HR project schedule, reporting,
+                                communications, Manage execution of HR project work to accomplish scope, onboard/ramp up
+                                of GHRS team to project and HR re-org requirements and needs. May also educate IT,
+                                Finance, business stakeholders to HR processes.</p>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Consulting on recruitment strategy and fulfillment process, Execute fulfillment including assessment, post and fill open positions (Works with HR CBS on selected services)</p>
+                            <p class="text-brand">Consulting on recruitment strategy and fulfillment process, Execute
+                                fulfillment including assessment, post and fill open positions (Works with HR CBS on
+                                selected services)</p>
                         </div>
                         <div class="child">
                             <ul>
-                                <li><span class="text-brand">OD</span>: Organizational Design - Cargill benchmarks and process for: org design, span and layers optimization. Advises on Change Management Resourcing. Change Management as related to an op model, spans and layers or org restructure business need including stakeholder and needs analysis. (May come from Global Change or GHRS) Builds org design capability in BHR and managers. Culture, strategy and planning – as needed. Manager and team effectiveness – as needed (could involve L&D)</li>
-                                <li><span class="text-brand">TM</span>: Facilitate talent assessment and review processes (selection)</li>
-                                <li><span class="text-brand">L&D</span>: Leadership development and training programs created for re-org – as needed</li>
+                                <li><span class="text-brand">OD</span>: Organizational Design - Cargill benchmarks and
+                                    process for: org design, span and layers optimization. Advises on Change Management
+                                    Resourcing. Change Management as related to an op model, spans and layers or org
+                                    restructure business need including stakeholder and needs analysis. (May come from
+                                    Global Change or GHRS) Builds org design capability in BHR and managers. Culture,
+                                    strategy and planning – as needed. Manager and team effectiveness – as needed (could
+                                    involve L&D)</li>
+                                <li><span class="text-brand">TM</span>: Facilitate talent assessment and review
+                                    processes (selection)</li>
+                                <li><span class="text-brand">L&D</span>: Leadership development and training programs
+                                    created for re-org – as needed</li>
                             </ul>
                         </div>
                         <div class="child">
-                                <p class="text-brand">Key partners from other businesses and functions that are critical for success are: Communications Lead (Business), Global Change & Enablement, IT.</p>
+                            <p class="text-brand">Key partners from other businesses and functions that are critical for
+                                success are: Communications Lead (Business), Global Change & Enablement, IT.</p>
                         </div>
                     </div>
                 </div>
@@ -485,69 +544,71 @@
 
 
         <section id="responsibility" class="bg-brand">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="padding_tb">
                     <div class="text-center" data-aos="fade-up">
                         <h2>Domains: Responsibilities and Deliverables. The ‘What’</h2>
                     </div>
                     <div class="resp" data-aos="fade-up" data-aos-delay="250">
                         <div class="row mt-5">
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="0">
                                     Business HR Leader (HR Project Lead)
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="1">
                                     GHRS BRM
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="2">
                                     CBS
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
                                 <div class="button" data-id="3">
                                     Total Rewards
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="4">
                                     Employee Experience
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row mt-4">
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="5">
                                     ER/IR
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
                                 <div class="button" data-id="6">
                                     HR Operations
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="7">
                                     GHRS Project Management (PM)
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                            <div class="col-md-4">
                                 <div class="button" data-id="8">
                                     Talent Acquisition
                                 </div>
                             </div>
-                            <div class="col-sm-4 col-gp-5">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
                                 <div class="button" data-id="9">
                                     Talent Performance
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-sm-4 col-gp-5 m-auto">
+                            <div class="col-md-4 ">
                                 <div class="button" data-id="10">
                                     Project Partners
                                 </div>
@@ -664,7 +725,7 @@
                         <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}"
                             data-aos-once="true">
                             <div class="p_arrow small_arrow"
-                                ng-class="{'visited' : process_arr[0].visited, 'active':process_index == 0}"
+                                ng-class="{'visited' : process_arr[0].visited, 'active':process_index == 0, 'animate-side' : !process_arr[0].visited}"
                                 ng-click="process_index = 0; process_arr[0].visited = true; console.log( process_arr[0].visited)">
                             </div>
                             <div class="p_arrow normal_arrow"
@@ -689,7 +750,7 @@
                                 Design
                             </div>
                             <div class="p_arrow small_arrow"
-                                ng-class="{'visited' : process_arr[4].visited, 'active':process_index == 4}"
+                                ng-class="{'visited' : process_arr[4].visited, 'active':process_index == 4, 'animate-side' : !process_arr[4].visited}"
                                 ng-click="process_index = 4; process_arr[4].visited = true;"></div>
                             <div class="p_arrow normal_arrow"
                                 ng-class="{'visited' : process_arr[5].visited, 'active':process_index == 5}"
@@ -697,7 +758,7 @@
                                 Plan
                             </div>
                             <div class="p_arrow small_arrow"
-                                ng-class="{'visited' : process_arr[6].visited, 'active':process_index == 6}"
+                                ng-class="{'visited' : process_arr[6].visited, 'active':process_index == 6, 'animate-side' : !process_arr[6].visited}"
                                 ng-click="process_index = 6; process_arr[6].visited = true;"></div>
                             <div class="p_arrow normal_arrow"
                                 ng-class="{'visited' : process_arr[7].visited, 'active':process_index == 7}"
