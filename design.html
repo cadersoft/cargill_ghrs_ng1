@@ -10,11 +10,59 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" type="text/css" href="scss/assess.css">
+    <link rel="stylesheet" type="text/css" href="scss/process.css">
     <title>Cargill</title>
 </head>
 
 <body>
     <div class="container">
+        <div data-aos="fade-up">
+            <!-- Line -->
+            <div class="process_line mt-3 ">
+                <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
+                        class="txt">Explore</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
+                    class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
+                </div>
+            </div>
+            <!-- Arrow -->
+            <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
+
+                <div class="p_arrow small_arrow visited" onclick="window.location = 'assess.html';"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location = 'assess.html';">Assess</div>
+
+                <div class="p_arrow medium_arrow visited" onclick="window.location = 'analyze.html';"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location = 'analyze.html';">Analyze</div>
+
+                <div class="p_arrow medium_arrow"></div>
+                <div class="p_arrow normal_arrow">Design</div>
+
+                <div class="p_arrow small_arrow visited" onclick="window.location='plan.html'"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location='plan.html'">Plan</div>
+
+                <div class="p_arrow small_arrow visited" onclick="window.location='implement.html'"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location='implement.html'">Implement</div>
+
+                <div class="p_arrow medium_arrow visited" onclick="window.location = 'sustain.html';"></div>
+                <div class="p_arrow last_arrow visited" onclick="window.location = 'sustain.html';">Sustain</div>
+
+
+
+
+            </div>
+        </div>
+
         <div class="darkblue">
             <p>Creating an ideal organizational structure involves developing options that are tested and prioritized by
                 the design team. First, the team focuses on the operating model and macro org structure (top levels)
@@ -29,7 +77,7 @@
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-10 pr-0">
                         <div class="title bg-blue">
                             Input
                         </div>
@@ -48,12 +96,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 center">
-                        <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
+                    <div class="col-2 pr-0 pl-0 center">
+                        <img src="images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pl-0">
                 <div class="title bg-blue">
                     Activities
                 </div>
@@ -73,7 +121,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pr-0">
                 <div class="title bg-blue">
                     Project Milestones
                 </div>
@@ -94,10 +142,10 @@
                 </div>
             </div>
             <div class="col">
-                <div class="row">
-                    <div class="col-4 center"> <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
+                <div class="row h-100">
+                    <div class="col-2 pl-0 pr-0 center"> <img src="images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
-                    <div class="col-8">
+                    <div class="col-10 pl-0">
                         <div class="title bg-blue">
                             Deliverables
                         </div>
@@ -120,191 +168,207 @@
             </div>
         </div>
 
-        <div class="row ">
-            <div class="col-2 business mt-3">
+        <div class="row mt-3 ">
+            <div class="col-12 ">
+                <div class="business">
+                    <div class="row">
 
-                <p>Business Roles Involved</p>
+                        <div class="col-2  mt-3">
 
-            </div>
-            <div class="col-10 business  mt-3">
+                            <p>Business Roles Involved</p>
 
-                <ul>
-                    <li>Business Sponsor of project</li>
-                    <li> CSD (if based on new strategy or integration) or Project Manager</li>
-                    <li>Business Managers</li>
-                    <li>Analyst (finance or other)</li>
-                    <li>Communications</li>
+                        </div>
+                        <div class="col-10   mt-3">
 
-                </ul>
+                            <ul>
+                                <li>Business Sponsor of project</li>
+                                <li> CSD (if based on new strategy or integration) or Project Manager</li>
+                                <li>Business Managers</li>
+                                <li>Analyst (finance or other)</li>
+                                <li>Communications</li>
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2 green mt-3 ">
-                <p>HR Roles Involved</p>
-            </div>
-            <div class="col-10 green mt-3">
-                <ul>
-                    <li>BHR Leader</li>
-                    <li>GHRS OD Consultant</li>
-                    <li>GHRS Talent Management Consultant
-                    </li>
-                    <li>CBS Activity Analysis</li>
-                    <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)</li>
-                    <li>GHRS Change Management Consultant (depending on complexity and project type)</li>
+                            </ul>
 
-                </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="mt-2">
-            <h2>Assess Phase: Activities by Workstream</h2>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="green">
+                    <div class="row">
+                        <div class="col-2 mt-3 ">
+                            <p>HR Roles Involved</p>
+                        </div>
+                        <div class="col-10  mt-3">
+                            <ul>
+                                <li>BHR Leader</li>
+                                <li>GHRS OD Consultant</li>
+                                <li>GHRS Talent Management Consultant
+                                </li>
+                                <li>CBS Activity Analysis</li>
+                                <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)</li>
+                                <li>GHRS Change Management Consultant (depending on complexity and project type)</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <table class="table table-bordered">
-                <thead class="dark">
-                    <tr>
-                        <th>HR Workstream</th>
-                        <th>GHRS</th>
-                        <th>BHR Leader</th>
-                    </tr>
-                </thead>
-                <tbody class="gray">
+    
+    <div class=" mt-5 mb-2">
+        <h2>Design Phase: Activities by HR Workstream</h2>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead class="dark">
+                <tr>
+                    <th>HR Workstream</th>
+                    <th>GHRS</th>
+                    <th>BHR Leader</th>
+                </tr>
+            </thead>
+            <tbody class="gray">
 
-                    <tr>
-                        <td> <b> Project Leadership </b>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Demand: identify and confirm project resources for Plan and Implement phases
-                                </li>
-                                <li>Domains: Provide resources required for Plan Phase once org design decisions are
-                                    made
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
+                <tr>
+                    <td> <b> Project Leadership </b>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Demand: identify and confirm project resources for Plan and Implement phases
+                            </li>
+                            <li>Domains: Provide resources required for Plan Phase once org design decisions are
+                                made
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
 
-                                <li>Timeline
-                                </li>
-                                <li> Clarify expectations of GHRS resources
-                                </li>
-                                <li> Develop project & process approach
-                                </li>
-                                <li> Assemble all relevant briefing materials for the HR Team
-                                </li>
-                                <li> Set up HR team for success
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <b> Organizational Development / Change Management</b>
-                        </td>
-                        <td><strong>Design
-                            </strong>
-                            <ul>
-                                <li>Org Design: develop, test and create org structures
-                                </li>
-                                <li>Macro Org Structure (L1-L2)
-                                </li>
-                                <li> Micro Org Structure (L3+)
-                                </li>
-                                <li>Governance Design
-                                </li>
-                                <li>Organizational analysis (e.g., Spans & Layers plan including cost analysis)
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Decision making to support the work
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <b>CBS Position Management
-                            </b>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Carry forward awareness and understanding of structure and roles into plan phase
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Include as a consult when designing structure and levelling
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <b>Talent Management
-                            </b> </td>
-                        <td>
-                            <ul>
-                                <li>Produce Talent Principles for the reorganization
-                                </li>
+                            <li>Timeline
+                            </li>
+                            <li> Clarify expectations of GHRS resources
+                            </li>
+                            <li> Develop project & process approach
+                            </li>
+                            <li> Assemble all relevant briefing materials for the HR Team
+                            </li>
+                            <li> Set up HR team for success
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b> Organizational Development / Change Management</b>
+                    </td>
+                    <td><strong>Design
+                        </strong>
+                        <ul>
+                            <li>Org Design: develop, test and create org structures
+                            </li>
+                            <li>Macro Org Structure (L1-L2)
+                            </li>
+                            <li> Micro Org Structure (L3+)
+                            </li>
+                            <li>Governance Design
+                            </li>
+                            <li>Organizational analysis (e.g., Spans & Layers plan including cost analysis)
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Decision making to support the work
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>CBS Position Management
+                        </b>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Carry forward awareness and understanding of structure and roles into plan phase
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Include as a consult when designing structure and levelling
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b>Talent Management
+                        </b> </td>
+                    <td>
+                        <ul>
+                            <li>Produce Talent Principles for the reorganization
+                            </li>
 
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li> Assist in clarifying business requirements around talent
-                                </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li> Assist in clarifying business requirements around talent
+                            </li>
 
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <b> CBS and PDT
-                            </b> </td>
-                        <td>
-                            <ul>
-                                <li>Provide HR data and analytics as needed
-                                </li>
-                            </ul>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><b> ER/IR </b>
-                        </td>
-                        <td>
-                            <ul>
-                                <li> Follow up on request for information needed to be able to support</li>
-                                <li> Advise on likely timing to complete all required consultation and implementation
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li> Provide information needed </li>
-                                <li>Build in timing to the overall plan and advise Leadership
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b> Total rewards: Compensation </b>
-                            (Function/Enterprise Compensation Lead)
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <b> CBS and PDT
+                        </b> </td>
+                    <td>
+                        <ul>
+                            <li>Provide HR data and analytics as needed
+                            </li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b> ER/IR </b>
+                    </td>
+                    <td>
+                        <ul>
+                            <li> Follow up on request for information needed to be able to support</li>
+                            <li> Advise on likely timing to complete all required consultation and
+                                implementation
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li> Provide information needed </li>
+                            <li>Build in timing to the overall plan and advise Leadership
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b> Total rewards: Compensation </b>
+                        (Function/Enterprise Compensation Lead)
 
-                        </td>
-                        <td></td>
-                        <td>
-                            <ul>
-                                <li>Consult as appropriate as org design decisions are made
-                                </li>
-                                <li>Ensure no assumptions are made by Managers while designing new roles/structure
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <ul>
+                            <li>Consult as appropriate as org design decisions are made
+                            </li>
+                            <li>Ensure no assumptions are made by Managers while designing new roles/structure
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 
 

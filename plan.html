@@ -10,11 +10,59 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" type="text/css" href="scss/assess.css">
+    <link rel="stylesheet" type="text/css" href="scss/process.css">
     <title>Cargill</title>
 </head>
 
 <body>
     <div class="container">
+        <div data-aos="fade-up">
+            <!-- Line -->
+            <div class="process_line mt-3 ">
+                <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
+                        class="txt">Explore</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
+                    class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
+                </div>
+            </div>
+            <!-- Arrow -->
+            <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
+
+                <div class="p_arrow small_arrow visited" onclick="window.location = 'assess.html';"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location = 'assess.html';">Assess</div>
+
+                <div class="p_arrow medium_arrow visited" onclick="window.location = 'analyze.html';"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location = 'analyze.html';">Analyze</div>
+
+                <div class="p_arrow medium_arrow visited" onclick="window.location = 'design.html';"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location = 'design.html';">Design</div>
+
+                <div class="p_arrow small_arrow "></div>
+                <div class="p_arrow normal_arrow ">Plan</div>
+
+                <div class="p_arrow small_arrow visited" onclick="window.location='implement.html'"></div>
+                <div class="p_arrow normal_arrow visited" onclick="window.location='implement.html'">Implement</div>
+
+                <div class="p_arrow medium_arrow visited" onclick="window.location='sustain.html'"></div>
+                <div class="p_arrow last_arrow visited" onclick="window.location='sustain.html'">Sustain</div>
+
+
+
+
+            </div>
+        </div>
+
         <div class="darkblue">
             <p>Once the future state organization design is approved, the design team will plan how to best implement
                 the new structure. This includes evaluating risks, change impacts, and the pace of change and creation
@@ -28,7 +76,7 @@
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-10 pr-0">
                         <div class="title bg-blue">
                             Input
                         </div>
@@ -50,12 +98,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 center">
-                        <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
+                    <div class="col-2 pr-0 pr-1 center">
+                        <img src="images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pl-0">
                 <div class="title bg-blue">
                     Activities
                 </div>
@@ -74,7 +122,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pr-0">
                 <div class="title bg-blue">
                     Project Milestones
                 </div>
@@ -94,14 +142,14 @@
                 </div>
             </div>
             <div class="col">
-                <div class="row">
-                    <div class="col-4 center"> <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
+                <div class="row h-100">
+                    <div class="col-2 pl-0 pr-0 center"> <img src="images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
-                    <div class="col-8">
+                    <div class="col-10 pl-0">
                         <div class="title bg-blue">
                             Deliverables
                         </div>
-                        <div class="desc gray h-100">
+                        <div class="desc gray">
                             <p>Material that is created and delivered to complete phase</p>
                             <p>Implementation Approach, Timeline and Measures
                                 Talent Fulfillment Approach
@@ -114,53 +162,72 @@
             </div>
         </div>
 
-        <div class="row ">
-            <div class="col-2 business mt-3">
+        <div class="row mt-3">
+            <div class="col-12 ">
+                <div class="business">
+                    <div class="row">
+                        <div class="col-2 mt-3">
 
-                <p>Business Roles Involved</p>
+                            <p>Business Roles Involved</p>
 
+                        </div>
+                        <div class="col-10   mt-3">
+
+                            <ul>
+                                <li>Business Sponsor of project</li>
+                                <li> Project Manager
+                                </li>
+                                <li>Business Managers (could be new or a different managers, based on the new macro org
+                                    structure)
+                                </li>
+                                <li>Analyst (finance or other)
+                                </li>
+                                <li>Communications</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-10 business  mt-3">
 
-                <ul>
-                    <li>Business Sponsor of project</li>
-                    <li> Project Manager
-                    </li>
-                    <li>Business Managers (could be new or a different managers, based on the new macro org structure)
-                    </li>
-                    <li>Analyst (finance or other)
-                    </li>
-                    <li>Communications</li>
 
-                </ul>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="green">
+                    <div class="row">
+                        <div class="col-2  mt-3 ">
 
+                            <p>HR Roles Involved</p>
+                        </div>
+                        <div class="col-10 green mt-3">
+                            <ul>
+                                <li>BHR Leader</li>
+                                <li>GHRS OD Consultant</li>
+                                <li>GHRS Talent Management and Talent Acquisition Consultants
+                                </li>
+                                <li>CBS – HR (PDS Development)
+                                </li>
+                                <li>Compensation, HR Operations
+                                </li>
+                                <li>Employee Experience (EE), ER/IR (Employee Relations/Industrial Relations),
+                                    Employment Law
+                                </li>
+                                <li>HR Data Specialist (CBS HR)
+                                </li>
+                                <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)
+                                </li>
+                                <li>GHRS Change Management Consultant (depending on complexity and project type)
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2 green mt-3 ">
-                <p>HR Roles Involved</p>
-            </div>
-            <div class="col-10 green mt-3">
-                <ul>
-                    <li>BHR Leader</li>
-                    <li>GHRS OD Consultant</li>
-                    <li>GHRS Talent Management and Talent Acquisition Consultants
-                    </li>
-                    <li>CBS – HR (PDS Development)
-                    </li>
-                    <li>Compensation, HR Operations
-                    </li>
-                    <li>Employee Experience (EE), ER/IR (Employee Relations/Industrial Relations), Employment Law
-                    </li>
-                    <li>HR Data Specialist (CBS HR)
-                    </li>
-                    <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)</li>
-                    <li>GHRS Change Management Consultant (depending on complexity and project type)</li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="mt-2">
+        <div class="mt-5 mb-2">
             <h2>Plan Phase: Activities by HR Workstream</h2>
         </div>
         <div>
@@ -295,7 +362,7 @@
                                 </li>
                             </ul>
                         </td>
-                    </tr>                                                            
+                    </tr>
                     <tr>
                         <td> <b>TA
                             </b>
@@ -385,12 +452,12 @@
 
                 </tbody>
             </table>
-           
+
         </div>
 
     </div>
 
-    
+
 
 
 
