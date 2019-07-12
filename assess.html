@@ -10,11 +10,57 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" type="text/css" href="scss/assess.css">
+    <link rel="stylesheet" type="text/css" href="scss/process.css">
     <title>Cargill</title>
 </head>
 
 <body>
     <div class="container">
+
+        <div data-aos="fade-up">
+            <!-- Line -->
+            <div class="process_line mt-3 ">
+                <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
+                        class="txt">Explore</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
+                    class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
+                <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true" class="process_dotted">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
+                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
+                </div>
+            </div>
+            <!-- Arrow -->
+            <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
+
+                <div class="p_arrow small_arrow " onclick="window.location = 'sustain.html';"></div>
+                <div class="p_arrow normal_arrow " onclick="window.location = 'sustain.html';">Assess</div>
+
+                <div class="p_arrow medium_arrow visited"></div>
+                <div class="p_arrow normal_arrow visited">Analyze</div>
+
+                <div class="p_arrow medium_arrow visited"></div>
+                <div class="p_arrow normal_arrow visited">Design</div>
+
+                <div class="p_arrow small_arrow visited"></div>
+                <div class="p_arrow normal_arrow visited">Plan</div>
+
+                <div class="p_arrow small_arrow visited"></div>
+                <div class="p_arrow normal_arrow visited">Implement</div>
+
+                <div class="p_arrow medium_arrow visited"></div>
+                <div class="p_arrow last_arrow visited">Sustain</div>
+
+            </div>
+        </div>
+
         <div class="darkblue">
             <p>A thorough assessment of current state using both quantitative and qualitative
                 information
@@ -27,7 +73,7 @@
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-10 pr-0">
                         <div class="title bg-blue">
                             Input
                         </div>
@@ -44,12 +90,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 center">
-                        <img src="/images/arrow_1_selected.png" alt="arrow_1_selected"></img>
+                    <div class="col-2 pr-0 pl-0 center">
+                        <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col  pl-0">
                 <div class="title bg-blue">
                     Activities
                 </div>
@@ -71,103 +117,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col pr-0">
                 <div class="title bg-blue">
                     Project Milestones
                 </div>
                 <div class="desc gray ">
-                        <p>Key checkpoints in the phase
-                            </p>
-                            <ul>
-                                <li>Project/Workstream Kickoff </li>
-                                <li>Design Team Workshop: Current State and Case for Change </li>
-                                <li>Gate Review Meeting (Approval to next phase)</li>
-        
-                            </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col-4 center"> <img src="/images/arrow_1_selected.png" alt="arrow_1_selected"></img>
-                    </div>
-                    <div class="col-8">
-                        <div class="title bg-blue">
-                            Deliverables
-                        </div>
-                        <div class="desc gray h-100">
-                                <p>Material that is created and delivered to complete phase</p>
-                                <ul>
-                                    <li>Current State Org Assessment</li>
-                                    <li>Case for Change</li>
-                                    <li>Stakeholder Analysis</li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!--
-        <div class="row ">
-            <div class="col-3 mt-3 ">
-                <div class="input">
-                    <h6> Input</h6>
-                </div>
-            </div>
-
-            <div class="col-3 mt-3">
-                <div class=" input1">
-                    <h6>Activities </h6>
-                </div>
-            </div>
-            <div class="col-3 mt-3 ">
-                <div class="input2">
-                    <h6>Project Milestones </h6>
-                </div>
-            </div>
-            <div class="col-3  mt-3">
-                <div class="input3">
-                    <h6>Deliverables </h6>
-                </div>
-            </div>
-            <div class="col-2  mt-3 ">
-                <div class="inputs">
-                    <p>Inputs completed prior to starting the org design project and Phase 1
-                    </p>
-                    <ul>
-                        <li>Intake Documents</li>
-                        <li>Business Strategy</li>
-                        <li>Talent Strategy / SWP </li>
-                        <li> business case</li>
-                        <li> External Insights </li>
-                        <li> 3rd Party SOW (if applicable) </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="img1 col-1">
-                <img src="/images/arrow_1_selected.png" alt="arrow_1_selected"></img>
-            </div>
-            <div class="col-md-2  mt-3">
-                <div class="major">
-                    <p>Major tasks required to meet milestones and/or deliverables
-                    </p>
-                    <ul>
-                        <li>Data Gathering and Preparation
-                        </li>
-                        <li>Activity Analysis (Performing)
-                        </li>
-                        <li>Talent Strategy / SWP </li>
-                        <li> Interviews
-                        </li>
-                        <li> Capability Gap Assessment
-                        </li>
-                        <li> Leadership Alignment
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-2  mt-3">
-                <div class="keypoints">
                     <p>Key checkpoints in the phase
                     </p>
                     <ul>
@@ -178,57 +132,71 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-1 img2">
-                <img src="/images/arrow_1_selected.png" alt="arrow_1_selected"></img>
+            <div class="col">
+                <div class="row h-100">
+                    <div class="col-2 pl-0 pr-0 center"> <img src="/images/arrow_1_s.png" alt="arrow_1_selected"></img>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <div class="title bg-blue">
+                            Deliverables
+                        </div>
+                        <div class="desc gray ">
+                            <p>Material that is created and delivered to complete phase</p>
+                            <ul>
+                                <li>Current State Org Assessment</li>
+                                <li>Case for Change</li>
+                                <li>Stakeholder Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-2  mt-3">
-                <div class=" deliverables">
-                    <p>Material that is created and delivered to complete phase</p>
-                    <ul>
-                        <li>Current State Org Assessment</li>
-                        <li>Case for Change</li>
-                        <li>Stakeholder Analysis</li>
-                    </ul>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="business">
+                    <div class="row">
+                        <div class="col-2  mt-3">
+                            <p>Business Roles Involved</p>
+                        </div>
+                        <div class="col-10   mt-3">
+                            <ul>
+                                <li>Business Sponsor of project</li>
+                                <li> CSD (if based on new strategy or integration) or Project Manager</li>
+                                <li>Business Managers</li>
+                                <li>Analyst (finance or other)</li>
+                                <li>Communications</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </div>-->
-        <div class="row ">
-            <div class="col-2 business mt-3">
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="green">
+                    <div class="row">
+                        <div class="col-2  mt-3 ">
+                            <p>HR Roles Involved</p>
+                        </div>
+                        <div class="col-10 green mt-3">
+                            <ul>
+                                <li>BHR Leader</li>
+                                <li>GHRS OD Consultant</li>
+                                <li>Compensation</li>
+                                <li>CBS Activity Analysis</li>
+                                <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)</li>
+                                <li>GHRS Change Management Consultant (depending on complexity and project type)</li>
 
-                <p>Business Roles Involved</p>
-
-            </div>
-            <div class="col-10 business  mt-3">
-
-                <ul>
-                    <li>Business Sponsor of project</li>
-                    <li> CSD (if based on new strategy or integration) or Project Manager</li>
-                    <li>Business Managers</li>
-                    <li>Analyst (finance or other)</li>
-                    <li>Communications</li>
-
-                </ul>
-
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2 green mt-3 ">
-                <p>HR Roles Involved</p>
-            </div>
-            <div class="col-10 green mt-3">
-                <ul>
-                    <li>BHR Leader</li>
-                    <li>GHRS OD Consultant</li>
-                    <li>Compensation</li>
-                    <li>CBS Activity Analysis</li>
-                    <li>GHRS Project Management (PM) or BRM (depending on complexity and project type)</li>
-                    <li>GHRS Change Management Consultant (depending on complexity and project type)</li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="mt-2">
+        <div class="mt-5 mb-2">
             <h2>Assess Phase: Activities by Workstream</h2>
         </div>
         <div>
