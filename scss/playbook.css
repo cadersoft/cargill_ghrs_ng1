@@ -199,12 +199,14 @@ li.nav-item.active a {
 
 .top_banner {
   width: 100%;
-  background-image: url("../images/1.png");
+  background-image: url("../images/GHRS_playbook_banner_source_file.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding: 200px 0;
+  height: 100vh;
   position: relative;
+  z-index: 100;
 }
 
 .top_banner h1 {
@@ -461,6 +463,19 @@ li.nav-item.active a {
   border-radius: 0 0 10px 10px;
 }
 
+.green_tab .tab-head .item:hover {
+  border-color: #279988;
+}
+
+.green_tab .tab-head .item.active {
+  border-color: #279988;
+}
+
+.green_tab .tab-body {
+  border: 2px solid #279988;
+  background-color: #279988;
+}
+
 .img_org {
   background-position: center;
   background-size: cover;
@@ -559,8 +574,8 @@ li.nav-item.active a {
 }
 
 .animate-side {
-  -webkit-animation: mover-side 0.3s infinite  alternate;
-          animation: mover-side 0.3s infinite  alternate;
+  -webkit-animation: mover-side 0.3s infinite alternate;
+          animation: mover-side 0.3s infinite alternate;
 }
 
 @-webkit-keyframes mover-side {
@@ -707,8 +722,8 @@ li.nav-item.active a {
 }
 
 img#down_arrow {
-  -webkit-animation: mover 0.7s infinite  alternate;
-          animation: mover 0.7s infinite  alternate;
+  -webkit-animation: mover 0.7s infinite alternate;
+          animation: mover 0.7s infinite alternate;
 }
 
 @-webkit-keyframes mover {
@@ -734,10 +749,10 @@ img#down_arrow {
 }
 
 .top_arrow {
-  background-color: #279988;
+  background-color: #00000063;
   position: fixed;
   right: 10px;
-  bottom: 10px;
+  bottom: 50%;
   padding: 10px;
 }
 /*# sourceMappingURL=playbook.css.map */
