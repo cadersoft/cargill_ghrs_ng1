@@ -142,16 +142,7 @@ app.controller('controller', function ($scope) {
         }
       ];
 
-      $(window).scroll(function (event) {
-        var scroll = $(window).scrollTop();
-            console.log(scroll);
-            if(scroll>500 || scroll==undefined){
-                $scope.showUpArrow = false;
-            }else{
-                $scope.showUpArrow = true;
-            }
-            **$scope.$apply();**
-        });
+     
 });
 
 $().ready(function () {
@@ -163,13 +154,7 @@ $().ready(function () {
         }, 1000)
     });*/
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > ($("#menu-tile").scrollTop() + 500) ) {
-            $('#top_arrow').fadeIn();
-        } else {
-            $('#top_arrow').fadeOut();
-        }
-    });​
+    
 
     $(".scroll_click").on('click', function(event) {
 
