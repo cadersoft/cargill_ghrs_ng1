@@ -78,7 +78,7 @@
                         <div class="mt-5">
                             <p><b>The Playbook will support global HR professionals by increasing understanding of:</b>
                             </p>
-                            <ul>
+                            <ul class="circle">
                                 <li>
                                     Typical HR work involved in business reorganizations and business partnerships with
                                     HR
@@ -177,6 +177,25 @@
                         </div>
                     </div>
 
+
+                    <div class="tab">
+                        <div class="tab-head">
+                            <div class="item" ng-repeat="item in partner_tabs" ng-click="tabClick($index)" data-aos="fade-up"
+                                data-aos-delay="{{$index * 250}}" ng-class="{'active' : selectedTab == $index}">
+                                <img ng-src={{item.img}} alt="">
+                                <div class="head">
+                                    {{item.head}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-body" data-aos="fade-up" data-aos-delay="1000">
+                            <div class="item" ng-repeat="item in tabs">
+                                <div class="body" ng-if="selectedTab == $index" ng-bind-html="item.body | to_trusted">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--
                     <div class="popup relative" ng-class="{'hide' : selectedpopup == 0}">
                         <div class="popup_panel  ">
                             <button type="button" class="close" ng-click="selectedpopup = 0" aria-label="Close">
@@ -300,6 +319,7 @@
 
 
                     </div>
+                    -->
                 </div>
             </div>
         </section>
@@ -941,6 +961,11 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="scorm/scorm_api_wrapper.js"></script>
+    <script type="text/javascript" src="scorm/scorm_broker.js"></script>
+    <script type="text/javascript" src="scorm/scorm.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 

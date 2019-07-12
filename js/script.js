@@ -142,11 +142,82 @@ app.controller('controller', function ($scope) {
         }
       ];
 
+      $scope.partner_tabs = [
+        {
+          img:"images/user_1_md.png",
+          head:"Business HR Leader",
+          body: `
+          <h3>Business HR Leader </h3>
+            <ul class="text-left pb-5 pr-5">
+                <li>Provides strategic leadership and expertise for the business; Strategic BHR Role
+                    LT level
+                    activities</li>
+                <li>Sets HR strategy and governance for all people deliverables on project</li>
+                <li>HR deliverable approver and escalation for HR barriers</li>
+                <li>Ownership & accountability for HR delivery</li>
+                <li>Communicate key implications from business strategy to the project team</li>
+                <li>Monitor progress and adjust HR functional strategy as needed to optimize
+                    performance</li>
+                <li>Provides leadership and expertise on efficient people measures</li>
+            </ul>`
+        },
+        {
+          img:"images/user_2_md.png",
+          head:"Business Project Design Team",
+          body:`<h3>Business Project Design Team </h3>
+          <ul class="text-left">
+              <li>Responsible for the project deliverables</li>
+              <li>Maintains an appropriate level of stakeholder engagement throughout the various
+                  project phases
+              </li>
+              <li>Develops detailed recommendations for leadership team approval in accordance
+                  with stage gate
+                  requirements</li>
+              <li>Conducts analysis to support: org design, span and layers optimization as
+                  related to an op model,
+                  spans and layers or org restructure business need and primarily responsible for
+                  financial modeling
+                  and
+                  process for tracking value</li>
+          </ul>`
+        },
+        {
+          img:"images/user_3_md.png",
+          head:"Business Leaders",
+          body:`<h3>Business Leaders</h3>
+          <ul class="text-left">
+              <li>Provides leadership and expertise on efficient organizational measures,
+                  comparison to
+                  competitors
+                  or internal Cargill benchmarks for business</li>
+              <li>Responsible to achieve cost/benefit value and any other key measures identified
+                  for project/team
+                  success</li>
+          </ul>`
+        },
+        {
+          img:"images/user_4_md.png",
+          head:"Managers",
+          body:
+          `<h3>Managers</h3>
+          <ul class="text-left">
+              <li>Provides strategic leadership and expertise for the business/department</li>
+              <li>Recommends key deliverables for their team to Business/Function Lead</li>
+              <li>Responsible for implementation of changes in team</li>
+              <li>Responsible for accurate HR data for their team</li>
+              <li>Responsible for partnering with Finance to track cost/benefit value and any
+                  other key measures
+                  identified for project success</li>
+              <li>Communication of change impacts to employee populations and individuals</li>
+          </ul>`
+        }
+      ];
      
 });
 
 $().ready(function () {
 
+    scormBroker.Complete('completed');
     /*$(window).on('load', function () { // makes sure the whole site is loaded 
         setTimeout(function () {
             $(".preload").remove();
