@@ -175,7 +175,42 @@ header {
 .nav-height {
     height: 80px;
 }
+#navbar {
+    background-color: #ddd !important;
+    /*border-bottom: 2px solid #005f86;*/
+  }
+  
+  .navbar {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .fixed_menu {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    background-color: #ddd !important;
+/* border-bottom: 2px solid #005f86; */
+box-shadow: 0 5px 5px 5px #00000045;
+  }
 
+
+.navbar{
+    position: absolute;
+    bottom: 0;
+  }
+  .fixed_menu{
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    
+  }
+  li.nav-item {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 0 5px;
+    /* margin: 0; */
+  }
 .fixed-nav {
     background-color: #005f86;
     background-color: #fff;
@@ -188,7 +223,7 @@ header {
 }
 
 li.nav-item {
-    padding: 20px 5px;
+    padding: 0px 5px;
     margin: 0px 1px;
     /* background-color: #005f86; */
 }
@@ -204,14 +239,13 @@ ul.navbar-nav {
 
 li.nav-item:hover,
 li.nav-item.active {
-    background-color: #005f86;
+    background-color: $green2;
 }
 
 li.nav-item:hover a,
 li.nav-item.active a {
     color: #fff !important;
 }
-
 
 .top_banner {
     width: 100%;

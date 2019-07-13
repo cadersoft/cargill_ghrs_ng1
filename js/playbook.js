@@ -226,15 +226,29 @@ $().ready(function () {
         }, 1000)
     });*/
 
+    var init = $("#navbar").offset().top;
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();
+      
         if ( scrollTop > $("#introduction").offset().top ) { 
             $(".top_arrow").fadeIn(1000)
         }else
         {
             $(".top_arrow").fadeOut(500)
         }
+
+   
+        //console.log($(window).scrollTop() + ">" + $("#navbar").offset().top + " = " + ($(window).scrollTop() > $("#navbar").offset().top))
+        if($(window).scrollTop() > init ){
+            if(!$("#navbar").hasClass("fixed_menu"))
+                $("#navbar").addClass('fixed_menu');
+        }
+        else{
+            if($("#navbar").hasClass("fixed_menu"))
+                $("#navbar").removeClass("fixed_menu");
+        } 
     });
+   
 
     $(".scroll_click").on('click', function(event) {
 
