@@ -10,13 +10,14 @@
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" type="text/css" href="scss/assess.css">
+    <link rel="stylesheet" type="text/css" href="plugins/aos.css">
     <link rel="stylesheet" type="text/css" href="scss/process.css">
     <title>Cargill</title>
 </head>
 
 <body>
     <div class="container">
-        <div data-aos="fade-up">
+        <div data-aos="fade-left">
             <!-- Line -->
             <div class="process_line mt-3 ">
                 <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
@@ -37,7 +38,7 @@
                 </div>
             </div>
             <!-- Arrow -->
-            <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
+            <div class="process_bar mb-2" data-aos="fade-left" data-aos-delay="{{7 * 250}}" data-aos-once="true">
 
                 <div class="p_arrow small_arrow visited" onclick="window.location = 'assess.html';"></div>
                 <div class="p_arrow normal_arrow visited" onclick="window.location = 'assess.html';">Assess</div>
@@ -64,7 +65,7 @@
         </div>
 
 
-        <div class="darkblue">
+        <div class="darkblue" data-aos="fade-left">
             <p>Applying strategic analysis and benchmarking to the baseline organization view allows the leaders to
                 define the priorities needed for the future state organization. The analyze phase results in actionable
                 insights, design principles, and an operating model hypothesis that will guide the design phase forward.
@@ -72,13 +73,13 @@
         </div>
 
         <div class="row">
-            <div class="col">
-                <div class="row">
+            <div class="col" data-aos="fade-left">
+                <div class="row h-100">
                     <div class="col-10 pr-0">
                         <div class="title bg-blue">
                             Input
                         </div>
-                        <div class="desc gray pr-1">
+                        <div class="desc gray pr-1 ">
                             <p>Inputs completed prior to starting Phase 2
 
                             </p>
@@ -96,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col pl-0">
+            <div class="col pl-0" data-aos="fade-left">
                 <div class="title bg-blue">
                     Activities
                 </div>
@@ -115,7 +116,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col pr-0">
+            <div class="col pr-0" data-aos="fade-left">
                 <div class="title bg-blue">
                     Project Milestones
                 </div>
@@ -133,7 +134,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-left">
                 <div class="row h-100">
                     <div class="col-2 pl-0 pr-0 center"> <img src="images/arrow_1_s.png" alt="arrow_1_selected"></img>
                     </div>
@@ -157,7 +158,7 @@
         </div>
 
         <div class="row mt-3">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-left">
                 <div class="business">
                     <div class="row">
                         <div class="col-2  mt-3">
@@ -182,7 +183,7 @@
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-12 ">
+            <div class="col-12" data-aos="fade-left">
                 <div class="green">
                     <div class="row">
                         <div class="col-2">
@@ -203,11 +204,11 @@
             </div>
         </div>
     
-    <div class="mt-2">
+    <div class="mt-5 mb-2">
         <h2>Analyze Phase: Activities by HR Workstream</h2>
     </div>
     <div>
-        <table class="table table-bordered">
+        <table class="table table-bordered" data-aos="fade-left">
             <thead class="dark">
                 <tr>
                     <th>HR Workstream</th>
@@ -321,10 +322,11 @@
 
 
     <script src="plugins/jquery-3.3.1.min.js"></script>
-    <script src="plugins/angular.min.js"></script>
-    <script src="plugins/anime.min.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
+    <script src="plugins/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 
 </html>
