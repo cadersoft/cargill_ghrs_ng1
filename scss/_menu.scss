@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    background-color: #279988 !important;
+}
+
+
+li.nav-item {
+    /*background-color: #f8f9fa;*/
+    text-align: center;
+    padding: 0 5px;
+    /* margin: 0; */
+}
+
+li.nav-item:hover, li.nav-item.active {
+    background-color: #005f86;
+}
+li.nav-item {
+    padding: 10px 5px;
+    margin: -8px 1px;
+}

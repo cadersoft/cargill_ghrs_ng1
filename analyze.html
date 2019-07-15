@@ -16,7 +16,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" ng-app="app" ng-controller="menu-controller">
+        <div>
+            <nav-menu active_no="1"></nav-menu>
+        </div>
+        <div class="space"></div>
         <div data-aos="fade-left">
             <!-- Line -->
             <div class="process_line mt-3 ">
@@ -203,114 +207,114 @@
                 </div>
             </div>
         </div>
-    
-    <div class="mt-5 mb-2">
-        <h2>Analyze Phase: Activities by HR Workstream</h2>
-    </div>
-    <div>
-        <table class="table table-bordered" data-aos="fade-left">
-            <thead class="dark">
-                <tr>
-                    <th>HR Workstream</th>
-                    <th>GHRS</th>
-                    <th>BHR Leader</th>
-                </tr>
-            </thead>
-            <tbody class="gray">
-                <tr>
-                    <td><strong> Project Leadership</strong>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>BRM submit intake form with resources for demand </li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Alignment HRLT</li>
-                            <li>Timeline</li>
-                            <li>Clarify expectations of GHRS resources</li>
-                            <li> Develop project & process approach</li>
-                            <li>Start to assemble all relevant briefing materials</li>
-                            <li>Set up HR project team for success</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td> <b> Organizational Development / Change Management</b>
-                    </td>
-                    <td><b>Analyze</b>
 
-                        <li>Discover and apply leading practices and benchmarking</li>
+        <div class="mt-5 mb-2">
+            <h2>Analyze Phase: Activities by HR Workstream</h2>
+        </div>
+        <div>
+            <table class="table table-bordered" data-aos="fade-left">
+                <thead class="dark">
+                    <tr>
+                        <th>HR Workstream</th>
+                        <th>GHRS</th>
+                        <th>BHR Leader</th>
+                    </tr>
+                </thead>
+                <tbody class="gray">
+                    <tr>
+                        <td><strong> Project Leadership</strong>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>BRM submit intake form with resources for demand </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Alignment HRLT</li>
+                                <li>Timeline</li>
+                                <li>Clarify expectations of GHRS resources</li>
+                                <li> Develop project & process approach</li>
+                                <li>Start to assemble all relevant briefing materials</li>
+                                <li>Set up HR project team for success</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Organizational Development / Change Management</b>
+                        </td>
+                        <td><b>Analyze</b>
 
-                        <li>Analysis and insights from activity analysis</li>
+                            <li>Discover and apply leading practices and benchmarking</li>
 
-                        <li>Create design principles and Location criteria</li>
+                            <li>Analysis and insights from activity analysis</li>
 
-                        <li>Operating model hypothesis</li>
+                            <li>Create design principles and Location criteria</li>
 
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Decision making to support the work</li>
+                            <li>Operating model hypothesis</li>
 
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td> <b> CBS and PDT</b>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Provide HR data and analytics as needed</li>
-                        </ul>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Decision making to support the work</li>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td> <b> ER/IR </b>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <b> CBS and PDT</b>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Provide HR data and analytics as needed</li>
+                            </ul>
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Consider how support will be provided, resources needed</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <b> ER/IR </b>
 
-                            <li>Share with BHR typical ER/IR activities involved in the work</li>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Consider how support will be provided, resources needed</li>
 
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Give update on re-organization approach and timing</li>
+                                <li>Share with BHR typical ER/IR activities involved in the work</li>
 
-                            <li>Validate level of detail required to support the work</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Give update on re-organization approach and timing</li>
 
-                            <li>Gain understanding from ER/IR what the typical work activities need to be</li>
+                                <li>Validate level of detail required to support the work</li>
 
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td> <b> Total Rewards; Compensation</b>
+                                <li>Gain understanding from ER/IR what the typical work activities need to be</li>
 
-                        (Function/Enterprise Compensation Lead )
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <ul>
-                            <li> Keep informed on progress/timing
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Total Rewards; Compensation</b>
 
-            </tbody>
-        </table>
+                            (Function/Enterprise Compensation Lead )
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <ul>
+                                <li> Keep informed on progress/timing
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-    </div>
+                </tbody>
+            </table>
+
+        </div>
     </div>
 
 
@@ -322,11 +326,14 @@
 
 
     <script src="plugins/jquery-3.3.1.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
     <script src="plugins/aos.js"></script>
+    <script src="plugins/angular.min.js"></script>
+    <script src="js/menu.js"></script>
     <script>
         AOS.init();
     </script>
-    
+
 </body>
 
 </html>

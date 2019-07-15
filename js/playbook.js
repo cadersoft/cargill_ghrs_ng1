@@ -21,6 +21,15 @@ var app = angular.module('app', [])
         return $sce.trustAsHtml(text);
     };
 }]);
+app.directive("navMenu", function() {
+    return {
+        restrict : "E",
+        scope: {
+            active_no: '@'
+         },
+        templateUrl : "menu.html"
+    };
+  });
 app.controller('controller', function ($scope) {
     $scope.selectedpopup = 0;
     $scope.selectedTab = 0;
@@ -225,28 +234,40 @@ $().ready(function () {
             $(".homepage").fadeIn(2000);
         }, 1000)
     });*/
-
-    var init = $("#navbar").offset().top;
+    
+    var menuarr = ['#introduction', '#partnering', '#org_design', '#assess'];
+    //var init = $("#navbar").offset().top;
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();
       
-        if ( scrollTop > $("#introduction").offset().top ) { 
-            $(".top_arrow").fadeIn(1000)
+        if ( scrollTop >= $("#introduction").offset().top ) { 
+            $(".arrow_nav").fadeIn(1000)
         }else
         {
-            $(".top_arrow").fadeOut(500)
+            $(".arrow_nav").fadeOut(500)
         }
 
    
         //console.log($(window).scrollTop() + ">" + $("#navbar").offset().top + " = " + ($(window).scrollTop() > $("#navbar").offset().top))
-        if($(window).scrollTop() > init ){
+        /*if($(window).scrollTop() > init ){
             if(!$("#navbar").hasClass("fixed_menu"))
                 $("#navbar").addClass('fixed_menu');
         }
         else{
             if($("#navbar").hasClass("fixed_menu"))
                 $("#navbar").removeClass("fixed_menu");
-        } 
+        } */
+
+       for(var i=0;i<menuarr.length;i++)
+       {
+            if(scrollTop >= $(menuarr[i]).offset().top - 10)
+            {
+                $(".navbar-nav > li").removeClass("active");
+                $(".navbar-nav > li").eq(i).addClass("active");
+               page_no = i;
+            }
+            //console.log(menuarr[i], $(menuarr[i]).offset().top);
+       }
     });
    
 
@@ -280,5 +301,38 @@ $().ready(function () {
           $("#responsibilityModal").find(".child:eq("+id+")").show();
       })
 
+
+      var page_no = 0;
+      $("#side_up").click(function(event){
+        event.preventDefault();
+        page_no--;
+        if(page_no == -1){
+            page_no = 0;
+            animateTo("#top")
+        }else{
+            animateTo(menuarr[page_no])
+        }
+      })
+
+      $("#side_down").click(function(event){
+        event.preventDefault();
+        page_no++;
+        if(page_no == menuarr.length){
+            page_no = menuarr.length - 1;
+        }else{
+            animateTo(menuarr[page_no])
+        }
+      })
+
+      function animateTo(id){
+          console.log(id);
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = id;
+          });
+      }
    
 });

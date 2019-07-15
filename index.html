@@ -14,70 +14,44 @@
 
 <body>
     <div id="top" class="homepage" ng-app="app" ng-controller="controller">
+        <div>
+            <nav-menu active_no="1"></nav-menu>
 
+        </div>
         <div class="image_slide" data-ride="carousel">
             <div class="top_banner">
                 <h1 class="text-center text-white">
                     <span class="ghrs_text_shadow">GHRS <br>REORGANIZATION</span><br>
                     <span class="play_text_shadow">PLAYBOOK</span>
                 </h1>
-
-                <div>
-                    <!--  <a href="#introduction" class="scroll_click">
+                <div class="text-center">
+                    <a href="#introduction" class="scroll_click">
                         <img id="down_arrow" class="mt-5" src="images/down_arrow.png" alt="">
-                    </a> -->
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light" id="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link scroll_click" href="#introduction">Introduction</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#menu-tile">Reorganization Team and Stakeholders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#partnering">Partnering with the Business</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#hrteam">HR Business Reorganization Project Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#responsibility">Domains: Responsibilities and Deliverables. The
-                                    ‘What’
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#org_design">What is Org Design?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#process_overview">Organization Design Process Overview</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#region_diagram">Sample Phasing by Region or Talent Pool
-                                    </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll_click" href="#region_table">Sample Phasing by Region or Talent Pool
-                                    </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    </a>
                 </div>
             </div>
 
         </div>
 
 
-        <div class="top_arrow">
-            <a href="#top" class="scroll_click">
-                <img src="images/up_arrow.png" alt="">
-            </a>
+        <div class="arrow_nav">
+            <div class="item">
+                <a id="side_up" href="#top">
+                    <img src="images/up_arrow.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a id="side_down" href="#top">
+                    <img src="images/down_arrow1.png" alt="">
+                </a>
+            </div>
         </div>
 
         <section id="introduction">
             <div class="container p-space">
                 <div class="row">
                     <div class="col-12">
-                        <h2 data-aos="fade-right">Introduction</h2>
+                        <h2 class="text-brand" data-aos="fade-right">Introduction</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -131,7 +105,7 @@
 
         <section id="menu-tile">
             <div class="container">
-                <h2 class="mb-5">Reorganization Team and Stakeholders</h2>
+                <h2 class="text-brand mb-5">Reorganization Team and Stakeholders</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card shadow-lg" data-aos="fade-up">
@@ -176,9 +150,9 @@
         </section>
 
         <section class=" p-space bg-grey project_team">
-            <div class="container ">
+            <div id="partnering" class="container ">
                 <div class="padding_tb">
-                    <div id="partnering" class="row">
+                    <div class="row">
                         <div class="col-12" data-aos="fade-up">
                             <h2>Partnering with the Business</h2>
                             <h6>Recommended involvement of business stakeholders</h6>
@@ -191,7 +165,7 @@
                             <div class="item" ng-repeat="item in partner_tabs" ng-click="tabClick($index)"
                                 data-aos="fade-up" data-aos-delay="{{$index * 250}}"
                                 ng-class="{'active' : selectedTab == $index}">
-                                <img ng-src={{item.img}} alt="">
+                                <img ng-src={{item.img}} width="100%" alt="">
                                 <div class="head">
                                     {{item.head}}
                                 </div>
@@ -351,7 +325,7 @@
                         <div class="tab-head">
                             <div class="item" ng-repeat="item in tabs" ng-click="tabClick($index)" data-aos="fade-up"
                                 data-aos-delay="{{$index * 250}}" ng-class="{'active' : selectedTab == $index}">
-                                <img ng-src={{item.img}} alt="">
+                                <img ng-src={{item.img}} width="100%" alt="">
                                 <div class="head">
                                     {{item.head}}
                                 </div>
@@ -653,7 +627,7 @@
             <div class="container">
                 <div class="padding_tb">
                     <div data-aos="fade-up">
-                        <h2>What is Org Design?</h2>
+                        <h2 class="text-brand">What is Org Design?</h2>
                         <p class="mt-5 mb-5">Organization Design is a proactive fact-based approach to analyze an
                             organizational structure
                             in terms of process, governance (decision rights), people effort, costs and operating model
@@ -723,8 +697,8 @@
             <div class="container-fluid">
                 <div class="mb-5" data-aos="fade-up">
                     <div class="text-center">
-                        <h2>ORGANIZATION DESIGN</h2>
-                        <h3>Process Overview</h3>
+                        <h2 class="text-brand">ORGANIZATION DESIGN</h2>
+                        <h3 class="text-brand">Process Overview</h3>
                     </div>
                 </div>
 
@@ -824,7 +798,9 @@
         <section class="" id="region_table">
             <div class="container p-space">
                 <div class="row">
-                    <h2 data-aos="fade-down" class="mb-5">Sample Phasing by Region or Talent Pool</h2>
+                    <h2 class="text-brand" data-aos="fade-down" class="text- mb-5">Domains: Duration of project
+                        activity. The ‘When’.</h2>
+
                     <img data-aos="fade-down" src="images/project_activity.png" class="full-width" alt="">
                 </div>
             </div>
@@ -834,12 +810,15 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="instr mt-5 mb-3 ">
-                        Click below process title to learn more.
+                    <div class="col">
+                        <h2 data-aos="fade-down" class="mb-0 text-brand">Reorganization Process</h2>
+                        <div class="instr mt-0 mb-3 ">
+                            Click below process title to learn more.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid" id="assess">
                 <div class="row">
                     <div class="col-6" data-aos="fade-up">
                         <div class="img1 img_org"></div>
@@ -863,7 +842,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="analyze">
 
                     <div class="col-6 " data-aos="fade-up">
                         <div class="p-5 process">
@@ -887,7 +866,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="design">
                     <div class="col-6" data-aos="fade-up">
                         <div class="img3 img_org"></div>
                     </div>
@@ -910,7 +889,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="plan">
 
                     <div class="col-6" data-aos="fade-up">
                         <div class="p-5 process">
@@ -933,7 +912,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="implement">
                     <div class="col-6" data-aos="fade-up">
                         <div class="img5 img_org"></div>
                     </div>
@@ -956,7 +935,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" id="sustain">
 
                     <div class="col-6" data-aos="fade-up">
                         <div class="p-5 process">

@@ -5,6 +5,8 @@ $green4: #abad23;
 $blue: #005f86;
 $border : #ddd;
 
+@import "menu";
+
 .text_g1 {
     color: $green1;
 }
@@ -176,13 +178,18 @@ header {
     height: 80px;
 }
 #navbar {
-    background-color: #ddd !important;
+    /*background-color: #ddd !important;*/
     /*border-bottom: 2px solid #005f86;*/
   }
   
   .navbar {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    background-color: #279988 !important;
   }
   
   .fixed_menu {
@@ -190,26 +197,13 @@ header {
     top: 0;
     bottom: auto;
     background-color: #ddd !important;
-/* border-bottom: 2px solid #005f86; */
-box-shadow: 0 5px 5px 5px #00000045;
+    box-shadow: 0 5px 5px 5px #00000045;
   }
 
 
-.navbar{
-    position: absolute;
-    bottom: 0;
-  }
-  .fixed_menu{
-    position: fixed;
-    top: 0;
-    bottom: auto;
-    
-  }
   li.nav-item {
-    background-color: #f8f9fa;
     text-align: center;
     padding: 0 5px;
-    /* margin: 0; */
   }
 .fixed-nav {
     background-color: #005f86;
@@ -223,8 +217,8 @@ box-shadow: 0 5px 5px 5px #00000045;
 }
 
 li.nav-item {
-    padding: 0px 5px;
-    margin: 0px 1px;
+    padding: 10px 5px;
+    margin: -8px 1px;
     /* background-color: #005f86; */
 }
 
@@ -233,18 +227,14 @@ ul.navbar-nav {
     margin: 0px;
 }
 
-.navbar {
-    padding: 0px;
-}
-
 li.nav-item:hover,
 li.nav-item.active {
-    background-color: $green2;
+    background-color: $blue;
 }
 
 li.nav-item:hover a,
 li.nav-item.active a {
-    color: #fff !important;
+    /*color: #fff !important;*/
 }
 
 .top_banner {
@@ -761,10 +751,18 @@ img#down_arrow {
     }
 }
 
-.top_arrow {
-    background-color: #00000063;
+.arrow_nav {
+    
     position: fixed;
     right: 10px;
     bottom: 50%;
-    padding: 10px;
+    z-index: 101;
+    .item{
+        margin-bottom: 2px;
+        background-color: #00000063;
+        padding: 10px;
+        &:hover{
+            background-color: $green2;
+        }
+    }
 }
