@@ -269,7 +269,7 @@ $().ready(function () {
             //console.log(menuarr[i], $(menuarr[i]).offset().top);
        }
     });
-   
+    $(window).scroll();
 
     $(".scroll_click").on('click', function(event) {
 
