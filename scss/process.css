@@ -1,3 +1,6 @@
+.text-brand {
+  color: #005F86;
+}
 .navbar {
   position: fixed;
   /* position: sticky; */
