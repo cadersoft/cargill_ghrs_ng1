@@ -221,21 +221,25 @@ app.controller('controller', function ($scope) {
           </ul>`
         }
       ];
-     
+      $scope.selectedDomain = [0,0,0,0,0,0]
+      $scope.domains = [
+          {
+              text: "Global Compensation",
+              filling: [1,1,1,3,3,3]
+          },
+          {
+            text: "Global Compensation",
+            filling: [1,1,1,3,3,3]
+        },
+        ]
 });
 
 $().ready(function () {
 
     //scormBroker.Complete('completed');
 
-    /*$(window).on('load', function () { // makes sure the whole site is loaded 
-        setTimeout(function () {
-            $(".preload").remove();
-            $(".homepage").fadeIn(2000);
-        }, 1000)
-    });*/
-    
     var menuarr = ['#introduction', '#partnering', '#org_design', '#assess'];
+    var arrowArr = ['#introduction', '#menu-tile', '#partnering','#hrteam','#responsibility', '#org_design','#region_diagram','#region_table', '#assess'];
     //var init = $("#navbar").offset().top;
     $(window).scroll(function(){
         var scrollTop = $(window).scrollTop();
@@ -247,24 +251,34 @@ $().ready(function () {
             $(".arrow_nav").fadeOut(500)
         }
 
-   
-        //console.log($(window).scrollTop() + ">" + $("#navbar").offset().top + " = " + ($(window).scrollTop() > $("#navbar").offset().top))
-        /*if($(window).scrollTop() > init ){
-            if(!$("#navbar").hasClass("fixed_menu"))
-                $("#navbar").addClass('fixed_menu');
-        }
-        else{
-            if($("#navbar").hasClass("fixed_menu"))
-                $("#navbar").removeClass("fixed_menu");
-        } */
-
        for(var i=0;i<menuarr.length;i++)
        {
             if(scrollTop >= $(menuarr[i]).offset().top - 10)
             {
                 $(".navbar-nav > li").removeClass("active");
                 $(".navbar-nav > li").eq(i).addClass("active");
+            }
+            //console.log(menuarr[i], $(menuarr[i]).offset().top);
+       }
+
+       for(var i=0;i<arrowArr.length;i++)
+       {
+            if(scrollTop >= $(arrowArr[i]).offset().top - 10)
+            {
                page_no = i;
+               console.log("page_no = " + page_no);
+               if(i == 0)
+               {
+                    $("#side_up").hide();
+                    $("#side_down").show();
+               }else if(i == arrowArr.length - 1 )
+               {
+                    $("#side_down").hide();
+                    $("#side_up").show();
+               }else{
+                    $("#side_up").show();
+                    $("#side_down").show();
+               }
             }
             //console.log(menuarr[i], $(menuarr[i]).offset().top);
        }
@@ -310,17 +324,17 @@ $().ready(function () {
             page_no = 0;
             animateTo("#top")
         }else{
-            animateTo(menuarr[page_no])
+            animateTo(arrowArr[page_no])
         }
       })
 
       $("#side_down").click(function(event){
         event.preventDefault();
         page_no++;
-        if(page_no == menuarr.length){
-            page_no = menuarr.length - 1;
+        if(page_no == arrowArr.length){
+            page_no = arrowArr.length - 1;
         }else{
-            animateTo(menuarr[page_no])
+            animateTo(arrowArr[page_no])
         }
       })
 
@@ -329,7 +343,7 @@ $().ready(function () {
         $('html, body').animate({
             scrollTop: $(id).offset().top
           }, 800, function(){
-       
+            
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = id;
           });

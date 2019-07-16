@@ -21,28 +21,37 @@
             <nav-menu active_no="1"></nav-menu>
         </div>
         <div class="space"></div>
-        <div data-aos="fade-left">
+        <div class="arrow_nav">
+            <div class="item">
+                <a id="side_up" href="index.html">
+                    <img src="images/home1.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a id="side_down" href="#top">
+                    <img src="images/down_arrow1.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div>
             <!-- Line -->
             <div class="process_line mt-3 ">
-                <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
-                        class="txt">Explore</span></div>
-                <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true" class="process_dotted">
+                <div class="process_bar uppercase text_g2"><span class="txt">Explore</span></div>
+                <div class="process_dotted">
                 </div>
-                <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
-                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
+                <div class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true" class="process_dotted">
+                <div class="process_dotted">
                 </div>
-                <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
-                    class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
-                <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true" class="process_dotted">
+                <div class="process_bar uppercase text_g2"><span class="txt">Plan</span>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
-                    class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
+                <div class="process_dotted">
+                </div>
+                <div class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt">Implement</span>
                 </div>
             </div>
             <!-- Arrow -->
-            <div class="process_bar mb-2" data-aos="fade-left" data-aos-delay="{{7 * 250}}" data-aos-once="true">
+            <div class="process_bar mb-2">
 
                 <div class="p_arrow small_arrow visited" onclick="window.location = 'assess.html';"></div>
                 <div class="p_arrow normal_arrow visited" onclick="window.location = 'assess.html';">Assess</div>
@@ -224,7 +233,7 @@
             </div>
         </div>
 
-        <div class=" mt-5 mb-2">
+        <div class=" mt-5 mb-2" id="second">
             <h2>Design Phase: Activities by HR Workstream</h2>
         </div>
         <div>
@@ -389,6 +398,7 @@
     <script src="plugins/aos.js"></script>
     <script src="plugins/angular.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/assess.js"></script>
     <script>
         AOS.init();
     </script>

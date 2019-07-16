@@ -177,12 +177,13 @@ header {
 .nav-height {
     height: 80px;
 }
+
 #navbar {
     /*background-color: #ddd !important;*/
     /*border-bottom: 2px solid #005f86;*/
-  }
-  
-  .navbar {
+}
+
+.navbar {
     position: fixed;
     /* position: sticky; */
     top: 0;
@@ -190,21 +191,22 @@ header {
     left: 0;
     right: 0;
     background-color: #279988 !important;
-  }
-  
-  .fixed_menu {
+}
+
+.fixed_menu {
     position: fixed;
     top: 0;
     bottom: auto;
     background-color: #ddd !important;
     box-shadow: 0 5px 5px 5px #00000045;
-  }
+}
 
 
-  li.nav-item {
+li.nav-item {
     text-align: center;
     padding: 0 5px;
-  }
+}
+
 .fixed-nav {
     background-color: #005f86;
     background-color: #fff;
@@ -496,6 +498,7 @@ li.nav-item.active a {
     color: #fff;
     padding: 20px;
     margin-top: 5px;
+    margin-right: 20px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -563,7 +566,7 @@ li.nav-item.active a {
 .process {
     max-width: 600px;
     margin: 50px auto;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 
@@ -652,6 +655,10 @@ li.nav-item.active a {
     &.active {
         background-image: url('../images/arrow_2_a.png');
     }
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .last_arrow {
@@ -752,17 +759,51 @@ img#down_arrow {
 }
 
 .arrow_nav {
-    
+
     position: fixed;
     right: 10px;
     bottom: 50%;
     z-index: 101;
-    .item{
+
+    .item {
         margin-bottom: 2px;
-        background-color: #00000063;
+        background-color: rgba(0, 0, 0, 0.38823529411764707);
         padding: 10px;
-        &:hover{
+        cursor: pointer;
+        &:hover {
             background-color: $green2;
         }
+        
     }
+}
+
+.cargill_panel {
+    border-radius: 0 15px;
+}
+
+p.indro {
+    /* top: -37%; */
+    margin-left: 35px;
+    margin-top: -25px;
+}
+
+.heading {
+    text-decoration: underline;
+}
+
+.assess {
+    border-color: white;
+    &:hover{
+        color: $blue !important;
+        background-color: #fff;
+    }
+}
+
+ul.square_bullet {
+    list-style-image: url('../images/bullet.png');
+}
+
+ul.square_bullet li {
+    padding-left: 10px;
+    padding-top: 5px; 
 }

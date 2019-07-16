@@ -79,3 +79,19 @@ h1 {
 .table-bordered{
   
 }
+.arrow_nav {
+  position: fixed;
+  right: 10px;
+  bottom: 50%;
+  z-index: 101;
+}
+
+.arrow_nav .item {
+  margin-bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.38823529411764707);
+  padding: 10px;
+}
+
+.arrow_nav .item:hover {
+  background-color: #279988;
+}
