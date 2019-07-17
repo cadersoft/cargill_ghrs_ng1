@@ -1,0 +1,23 @@
+.c-row
+{
+    border:1px solid #eee;
+    display: flex;
+}
+
+.cell
+{
+    padding:10px 0;
+    margin-right: 2px;
+}
+
+@for $i from 1 through 20 {
+    
+    $width: percentage($i*5/100);
+
+    .offset-#{$i*5} {
+        margin-left: $width;
+    }
+    .width-#{$i*5} {
+        width: $width;
+    }
+}
