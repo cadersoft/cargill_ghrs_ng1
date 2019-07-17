@@ -34,6 +34,7 @@ app.controller('controller', function ($scope) {
     $scope.selectedpopup = 0;
     $scope.selectedTab = 0;
     $scope.process_index = -1;
+    $scope.before_process_index =-1;
     $scope.tabClick = function (tabIndex) {
         console.log(tabIndex);
         $scope.selectedTab = tabIndex;
@@ -105,6 +106,36 @@ app.controller('controller', function ($scope) {
             `
         }
     ]
+
+    $scope.before_process_arr = [{
+        "text": `
+        <h2>Before Assess Phase</h2>
+        <p>BHR Leader engages the GHRS BRM in the Project Intake process. Considerations:</p>
+        <ul>
+            <li>Typically in a re-organization, OD is required before the rest of the GHRS team. Therefore, following this initial conversation, it is typical that the GHRS BRM would ensure that an initial consult and SOW development between BHR Leader and GHRS OD. </li>
+            <li>This should happen before the assess phase and the project submitted through the Demand Process to Portfolio Review Team</li>
+            <li>It is important to estimate HR resources for the entire re-organization. At the same time, we also know that work that has not been designed will not have 100% accurate estimations. We assume we can only estimate based on known information, and these estimates will need to be updated as design decisions are made, closer to plan and implementation. </li>
+        </ul>
+        `
+    },
+    {
+        "text": `
+        <h2>Before Plan Phase</h2>
+        <p>BHR Leader /Project Lead and GHRS BRM should plan to update the resource plan and estimations, based on design decisions and pace of implementation. Considerations:</p>
+        <ul>
+            <li>IT may also need to be brought into the conversation to understand the updated scope of systems updates and plan for the IT project.</li>
+            <li>PRT approval may be required for increased scope of work or resource estimations. </li>
+            <li>If design work is iterative, or regional, more frequent BHR Leader and GHRS BRM resource planning sessions may be required. </li>
+        </ul>
+        `
+    },
+    {
+        "text": `
+        <h2>Before Implement Phase and ongoing</h2>
+        <p>Once the GHRS project team members are assigned, they are able to review and clarify the scope of work they need to deliver. At this point, the project team should update the estimate of their time and confirm their commitment. BHR Leader/Project Lead and GHRS BRM should plan an updated resource plan and estimations.</p>
+        `
+    }
+]
     $scope.tabs = [{
             img: "images/tab1.png",
             head: "Business HR Leader",
@@ -221,7 +252,7 @@ app.controller('controller', function ($scope) {
         $scope.selectedDomainTitle = d.text;
     }
     $scope.selectedDomainTitle = "";
-    $scope.selectedDomain = [0, 0, 0, 1, 2, 3]
+    $scope.selectedDomain = [0, 0, 0, 0, 0, 0]
     $scope.domains = [{
             text: "Global Compensation",
             filling: [3, 3, 3, 2, 2, 2]
@@ -289,6 +320,10 @@ app.controller('controller', function ($scope) {
 
         },
         {
+            text: "Domain",
+            class:'d_heading'
+        },
+        {
             text: "IT",
             filling: [0, 0, 3, 1, 1, 0]
         }
@@ -320,7 +355,7 @@ $().ready(function () {
     //scormBroker.Complete('completed');
 
     var menuarr = ['#introduction', '#partnering', '#org_design', '#assess'];
-    var arrowArr = ['#introduction', '#menu-tile', '#partnering', '#hrteam', '#responsibility', '#org_design', '#region_diagram', '#region_table', '#assess'];
+    var arrowArr = ['#introduction', '#menu-tile', '#partnering', '#hrteam', '#responsibility', '#org_design',  '#process_overview', '#ghrs_before', '#region_diagram', '#region_table', '#assess', '#design', '#implement'];
     //var init = $("#navbar").offset().top;
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop();
@@ -342,7 +377,6 @@ $().ready(function () {
         for (var i = 0; i < arrowArr.length; i++) {
             if (scrollTop >= $(arrowArr[i]).offset().top - 10) {
                 page_no = i;
-                console.log("page_no = " + page_no);
                 if (i == 0) {
                     $("#side_up").hide();
                     $("#side_down").show();

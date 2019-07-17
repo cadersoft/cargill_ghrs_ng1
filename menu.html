@@ -42,8 +42,14 @@
                         <a class="dropdown-item" href="sustain.html">Sustain</a>
                     </div>
                 </li>
-                <li class="nav-item" ng-class="{'active' : active_no==5}">
-                    <a class="nav-link scroll_click" href="appendix.html">Appendix</a>
+                <li class="nav-item dropdown" ng-class="{'active' : active_no==5}">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"  data-toggle="dropdown">
+                        Appendix
+                    </a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" href="appendix.html">Glossary</a>
+                            <a class="dropdown-item" href="appendix.html#feedback">Feedback</a>
+                        </div>
                 </li>
             </ul>
         </div>

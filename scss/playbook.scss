@@ -2,6 +2,7 @@ $green1: #007681;
 $green2: #279989;
 $green3: #658d1b;
 $green4: #abad23;
+$green5: #61b0ae;
 $blue: #005f86;
 $border : #ddd;
 
@@ -15,8 +16,15 @@ $lightgreen: #c0dfda;
 .bg-green-light{
     background-color: $lightgreen;
 }
+.bg-green1{
+    background-color: $green1;
+}
 .bg-green2{
     background-color: $green2;
+}
+
+.bg-green5{
+    background-color: $green5;
 }
 
 
@@ -409,12 +417,18 @@ li.nav-item.active a {
     padding: 15px;
     text-align: center;
     transition: all 0.5s ease;
-    margin: 5px 0;
+    margin: 1px 0;
     border: 1px solid $blue;
     &.active, &:hover{
         background-color: #fff;
         color: $blue !important;
     }
+}
+.d_heading
+{
+    
+    text-align: center;
+    font-size: 2.5rem;
 }
 .button {
     border: 1px solid #FFFFFF;
@@ -516,6 +530,7 @@ li.nav-item.active a {
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: 0px;
+    background-color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -639,9 +654,12 @@ li.nav-item.active a {
     background-image: url('../images/arrow_1.png');
 
     &.visited {
+        background-image: url('../images/arrow_1_s.png');
+    }
+    &.visited_b {
         background-image: url('../images/arrow_1.png');
     }
-
+    
     &.active {
         background-image: url('../images/arrow_1_a.png');
     }
@@ -672,10 +690,10 @@ li.nav-item.active a {
     height: 49px;
     background-image: url('../images/arrow_3.png');
 
-    &.visited {
+    &.disabled, &.visited {
         background-image: url('../images/arrow_3_s.png');
     }
-
+    
     &.active {
         background-image: url('../images/arrow_3_a.png');
     }
@@ -686,10 +704,10 @@ li.nav-item.active a {
     height: 53px;
     background-image: url('../images/arrow_2.png');
 
-    &.visited {
+    &.disabled, &.visited {
         background-image: url('../images/arrow_2_s.png');
     }
-
+   
     &.active {
         background-image: url('../images/arrow_2_a.png');
     }
@@ -704,7 +722,7 @@ li.nav-item.active a {
     height: 53px;
     background-image: url('../images/arrow_4.png');
 
-    &.visited {
+    &.disabled, &.visited {
         background-image: url('../images/arrow_4_s.png');
     }
 
@@ -721,19 +739,22 @@ li.nav-item.active a {
     font-size: 1.3rem;
     padding-top: 7px;
     cursor: pointer;
+    &.disabled{
+        cursor: auto;
+    }
 }
 
 .process_desc {
     display: block;
-    max-height: 0;
     padding: 20px;
     border-radius: 0 20px;
     background-color: $green2;
-    transition: max-height 0.5s ease;
-
-    &.active {
-        min-height: 300px;
-    }
+}
+.min-w-200{
+    min-height: 200px;
+}
+.min-w-300{
+    min-height: 300px;
 }
 
 .instr {

@@ -6,8 +6,19 @@
 }
 
 .cell {
-  padding: 10px 0;
+  padding: 10px 5px;
   margin-right: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
 }
 
 .offset-5 {
@@ -170,18 +181,12 @@
   width: 100%;
 }
 
-#rounded {
-  border: 1px solid #005f86;
-  font-size: 10px;
+.offset-7 {
+  margin-left: 7%;
 }
 
-#talent {
-  border: 1px solid #005f86;
-  text-align: center;
-  font-size: 10px;
-}
-
-.talent {
-  background-color: #eaf6f8;
+.first-cell {
+  border: 2px solid #005f86;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=timeline.css.map */
