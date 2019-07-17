@@ -121,3 +121,8 @@ $green2: #279988;
 .h-200{
     height:600px;
 }
+
+.table-bordered th, .table-bordered td, .table thead th
+{
+    border-color: #005f86;
+}

@@ -136,7 +136,11 @@ body {
     background-color: #005f86;
     color: #ffffff;
 }
-
+.cargill_border_box {
+    border: 2px solid $blue;
+    padding: 30px;
+    border-radius: 0 20px;
+}
 
 .hide {
     display: none;
