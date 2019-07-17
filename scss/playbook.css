@@ -24,12 +24,24 @@ li.nav-item {
   margin: -8px 1px;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-green-light {
+  background-color: #c0dfda;
+}
+
+.bg-green2 {
+  background-color: #279989;
+}
+
 .text_g1 {
   color: #007681;
 }
 
 .text_g2 {
-  color: #279988;
+  color: #279989;
 }
 
 .text_b {
@@ -40,12 +52,18 @@ li.nav-item {
   color: white;
 }
 
+.legend {
+  margin: 5px -15px 50px -15px;
+  border-top: 5px solid #005f86;
+  padding-top: 20px;
+}
+
 .green1 {
   background-color: #007681;
 }
 
 .green2 {
-  background-color: #279988;
+  background-color: #279989;
 }
 
 .green3 {
@@ -394,6 +412,21 @@ li.nav-item.active a {
   max-width: 20%;
 }
 
+.domain_btn {
+  cursor: pointer;
+  padding: 15px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 5px 0;
+  border: 1px solid #005f86;
+}
+
+.domain_btn.active, .domain_btn:hover {
+  background-color: #fff;
+  color: #005f86 !important;
+}
+
 .button {
   border: 1px solid #FFFFFF;
   border-radius: 5px;
@@ -403,6 +436,18 @@ li.nav-item.active a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   min-height: 70px;
+}
+
+.close-padding {
+  padding: 0px 1px;
+}
+
+.table_layout {
+  padding: 10px;
+}
+
+.padding-1 {
+  padding-top: 2px;
 }
 
 .button:hover {
@@ -516,16 +561,16 @@ li.nav-item.active a {
 }
 
 .green_tab .tab-head .item:hover {
-  border-color: #279988;
+  border-color: #279989;
 }
 
 .green_tab .tab-head .item.active {
-  border-color: #279988;
+  border-color: #279989;
 }
 
 .green_tab .tab-body {
-  border: 2px solid #279988;
-  background-color: #279988;
+  border: 2px solid #279989;
+  background-color: #279989;
 }
 
 .img_org {
@@ -715,7 +760,7 @@ li.nav-item.active a {
   max-height: 0;
   padding: 20px;
   border-radius: 0 20px;
-  background-color: #279988;
+  background-color: #279989;
   -webkit-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
 }
@@ -756,11 +801,11 @@ li.nav-item.active a {
 }
 
 .process_line .process_bar.b-green2 {
-  border-color: #279988;
+  border-color: #279989;
 }
 
 .process_line .process_dotted {
-  border-bottom: 2px dotted #279988;
+  border-bottom: 2px dotted #279989;
   min-width: 32px;
   margin-bottom: 4px;
 }
@@ -819,7 +864,7 @@ img#down_arrow {
 }
 
 .arrow_nav .item:hover {
-  background-color: #279988;
+  background-color: #279989;
 }
 
 .cargill_panel {
@@ -852,5 +897,11 @@ ul.square_bullet {
 ul.square_bullet li {
   padding-left: 10px;
   padding-top: 5px;
+}
+
+.square_box {
+  margin: 5px 10px;
+  width: 15px;
+  height: 15px;
 }
 /*# sourceMappingURL=playbook.css.map */

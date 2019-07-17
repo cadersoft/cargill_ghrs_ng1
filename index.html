@@ -338,7 +338,6 @@
                         <h2 class="heading">HR Business Reorganization Project Team</h2>
                         <p><strong>For every reorganization there is an HR team structure and responsibilities</strong>
                         </p>
-
                         <div class="instr mt-5 mb-3">
                             Click below images to learn more.
                         </div>
@@ -829,12 +828,75 @@
 
         <section class="" id="region_table">
             <div class="container p-space">
-                <div class="row">
-                    <h2 class="text-brand heading" data-aos="fade-down" class="text- mb-5">Domains: Duration of
-                        project
-                        activity. The ‘When’.</h2>
+                <h2 class="text-brand heading mb-5" data-aos="fade-down" class="text- mb-5">Domains: Duration of
+                    project
+                    activity. The ‘When’.</h2>
 
-                    <img data-aos="fade-down" src="images/project_activity.png" class="full-width" alt="">
+                <div class="row">
+                    <div class="col close-padding" ng-repeat="p in process">
+                        <div class="text-center bg-brand table_layout">
+                            {{p.text}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row padding-1">
+                    <div class="col close-padding" ng-repeat="s in selectedDomain track by $index">
+                        <div class="text-center table_layout"
+                            ng-class="{'bg-white' : s == 0, 'bg-green-light' : s == 1, 'bg-green2' : s == 2, 'bg-brand' : s == 3}">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legend">
+                    <div class="row justify-content-md-center">
+                        <div class="col-3 ">
+                            <div class="d-flex">
+                                <div class="bg-brand square_box"></div>
+                                Consult
+                            </div>
+                        </div>
+                        <div class="col-3 ">
+                            <div class="d-flex">
+                                <div class="bg-green2 square_box"></div>
+                                Always
+                            </div>
+                        </div>
+                        <div class="col-3 ">
+                            <div class="d-flex">
+                                <div class="bg-green-light square_box"></div>
+                                Some Projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 close-padding" ng-repeat="d in domains">
+                        <div class="bg-brand text-white domain_btn"
+                            ng-class="{'active' : selectedDomainTitle == d.text}" ng-click="domain_click(d)">
+                            {{d.text}}
+                        </div>
+                    </div>
+                    <!--  <div class="col-1" ng-repeat="colors in domains">
+                        {{colors.filling}}
+                    </div>
+                    <div class="col-1" ng-repeat="colors in domains">
+                        {{colors.filling}}
+                    </div>
+                    <div class="col-1" ng-repeat="colors in domains">
+                        {{colors.filling}}
+                    </div>
+                    <div class="col-1" ng-repeat="colors in domains">
+                        {{colors.filling}}
+                    </div>
+                    <div class="col-1" ng-repeat="colors in domains">
+                        {{colors.filling}}
+                    </div>-->
+
+
+
                 </div>
             </div>
         </section>

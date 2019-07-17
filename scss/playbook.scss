@@ -1,11 +1,25 @@
 $green1: #007681;
-$green2: #279988;
+$green2: #279989;
 $green3: #658d1b;
 $green4: #abad23;
 $blue: #005f86;
 $border : #ddd;
 
+$lightgreen: #c0dfda;
+
 @import "menu";
+
+.bg-white{
+    background-color: #fff;
+}
+.bg-green-light{
+    background-color: $lightgreen;
+}
+.bg-green2{
+    background-color: $green2;
+}
+
+
 
 .text_g1 {
     color: $green1;
@@ -21,6 +35,11 @@ $border : #ddd;
 
 .text_w {
     color: white
+}
+.legend{
+    margin: 5px -15px 50px -15px;
+    border-top: 5px solid $blue;
+    padding-top: 20px;
 }
 
 .green1 {
@@ -385,7 +404,18 @@ li.nav-item.active a {
     flex: 0 0 20%;
     max-width: 20%;
 }
-
+.domain_btn{
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.5s ease;
+    margin: 5px 0;
+    border: 1px solid $blue;
+    &.active, &:hover{
+        background-color: #fff;
+        color: $blue !important;
+    }
+}
 .button {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
@@ -395,7 +425,15 @@ li.nav-item.active a {
     transition: all 0.5s ease;
     min-height: 70px;
 }
-
+.close-padding{
+    padding: 0px 1px;
+}
+.table_layout{
+    padding: 10px;
+}
+.padding-1{
+    padding-top: 2px;
+}
 .button:hover {
     background-color: #FFFFFF;
     color: #005F86;
@@ -806,4 +844,9 @@ ul.square_bullet {
 ul.square_bullet li {
     padding-left: 10px;
     padding-top: 5px; 
+}
+.square_box{
+    margin: 5px 10px;
+    width: 15px;
+    height: 15px;
 }
