@@ -183,7 +183,6 @@ app.controller('controller', function ($scope) {
             img: "images/user_1_md.png",
             head: "Business HR Leader",
             body: `
-          <h3>Business HR Leader </h3>
             <ul class="text-left pb-5 pr-5">
                 <li>Provides strategic leadership and expertise for the business; Strategic BHR Role
                     LT level
@@ -200,7 +199,7 @@ app.controller('controller', function ($scope) {
         {
             img: "images/user_2_md.png",
             head: "Business Project Design Team",
-            body: `<h3>Business Project Design Team </h3>
+            body: `
           <ul class="text-left">
               <li>Responsible for the project deliverables</li>
               <li>Maintains an appropriate level of stakeholder engagement throughout the various
@@ -220,7 +219,7 @@ app.controller('controller', function ($scope) {
         {
             img: "images/user_3_md.png",
             head: "Business Leaders",
-            body: `<h3>Business Leaders</h3>
+            body: `
           <ul class="text-left">
               <li>Provides leadership and expertise on efficient organizational measures,
                   comparison to
@@ -234,7 +233,7 @@ app.controller('controller', function ($scope) {
         {
             img: "images/user_4_md.png",
             head: "Managers",
-            body: `<h3>Managers</h3>
+            body: `
           <ul class="text-left">
               <li>Provides strategic leadership and expertise for the business/department</li>
               <li>Recommends key deliverables for their team to Business/Function Lead</li>
@@ -320,7 +319,7 @@ app.controller('controller', function ($scope) {
 
         },
         {
-            text: "Domain",
+            text: "",
             class:'d_heading'
         },
         {
