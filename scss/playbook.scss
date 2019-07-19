@@ -875,3 +875,24 @@ ul.square_bullet li {
     width: 15px;
     height: 15px;
 }
+.talent {
+    position:relative;
+    padding: 10px;
+    background-color: #fff;
+    border: 5px solid #357f9c;
+}
+
+#talent_2,#talent_3, #talent_4 {
+    width:auto;
+    position:absolute;
+    top:14px
+    right:3%;
+}
+#talent_3 {
+    top: 10px;
+    left: 16%;
+}
+#talent_4 {
+    top: 2%;
+    left: 10%;
+}

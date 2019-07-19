@@ -251,7 +251,61 @@ app.controller('controller', function ($scope) {
         $scope.selectedDomainTitle = d.text;
     }
     $scope.selectedDomainTitle = "";
-    $scope.selectedDomain = [0, 0, 0, 0, 0, 0]
+    $scope.selectedDomain = [0, 0, 0, 0, 0, 0];
+    $scope.talents = [
+        {
+            "img":"images/talent/talent_1_1.png"
+        },
+        {
+            "img":"images/talent/talent_1_2.png"
+        },
+        {
+            "img":"images/talent/talent_1_3.png"
+        },
+        {
+            "img":"images/talent/talent_1_4.png"
+        },
+        {
+            "img":"images/talent/talent_1_5.png"
+        },
+        {
+            "img":"images/talent/talent_1_6.png"
+        },
+        {
+            "img":"images/talent/talent_1_7.png"
+        },
+        {
+            "img":"images/talent/talent_1_8.png"
+        },
+        {
+            "img":"images/talent/talent_1_9.png"
+        },
+        {
+            "img":"images/talent/talent_1_10.png"
+        },
+        {
+            "img":"images/talent/talent_1_11.png"
+        },
+        {
+            "img":"images/talent/talent_1_12.png"
+        },
+        {
+            "img":"images/talent/talent_2.png",
+            "id": "talent_2",
+            "aos": "fade-left"
+        }
+        ,
+        {
+            "img":"images/talent/talent_3.png",
+            "id": "talent_3",
+            "aos": "fade-right"
+        },
+        {
+            "img":"images/talent/talent_4.png",
+            "id": "talent_4",
+            "aos": "fade-right"
+        }
+    ]
     $scope.domains = [{
             text: "Global Compensation",
             filling: [3, 3, 3, 2, 2, 2]
