@@ -850,11 +850,10 @@
                 <div class="process_desc text-white active min-w-200" ng-if="process_index != -1"
                     ng-bind-html="process_arr[process_index].text | to_trusted">
                 </div>
-                <div class="space-100"></div>
+                <div id="ghrs_before" class="space-100"></div>
             </div>
 
-            <div id="ghrs_before" class="container">
-                <div class="space-100"></div>
+            <div  class="container">
                 <div class="mb-5" data-aos="fade-up">
                     <div class="cargill_panel mt-3 bg-brand text-white p-4" data-aos="fade-left">
                         <h3 class="mb-3 heading">GHRS Project Intake for Re-Orgs</h3>
@@ -961,7 +960,7 @@
                     <div class="talent">
                         <div ng-repeat="item in talents">
                             
-                            <img id="{{item.id}}" data-aos="{{ item.aos != undefined ? item.aos: 'fade-up'}}" ng-src="{{item.img}}" data-aos-delay="$index * 250"
+                            <img id="{{item.id}}" data-aos="{{ item.aos != undefined ? item.aos: 'fade-up'}}" ng-src="{{item.img}}" data-aos-delay="{{$index * 250}}"
                                 class="full-width" alt="">
 
                         </div>

@@ -944,8 +944,8 @@ ul.square_bullet li {
 #talent_2, #talent_3, #talent_4 {
   width: auto;
   position: absolute;
-  top: 0;
-  right: 3%;
+  top: 20px;
+  right: 4%;
 }
 
 #talent_3 {
