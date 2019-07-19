@@ -190,8 +190,8 @@ app.controller('controller', function ($scope) {
                 <li>Sets HR strategy and governance for all people deliverables on project</li>
                 <li>HR deliverable approver and escalation for HR barriers</li>
                 <li>Ownership & accountability for HR delivery</li>
-                <li>Communicate key implications from business strategy to the project team</li>
-                <li>Monitor progress and adjust HR functional strategy as needed to optimize
+                <li>Communicates key implications from business strategy to the project team</li>
+                <li>Monitors progress and adjust HR functional strategy as needed to optimize
                     performance</li>
                 <li>Provides leadership and expertise on efficient people measures</li>
             </ul>`
@@ -218,7 +218,7 @@ app.controller('controller', function ($scope) {
         },
         {
             img: "images/user_3_md.png",
-            head: "Business Leaders",
+            head: "Business Leader",
             body: `
           <ul class="text-left">
               <li>Provides leadership and expertise on efficient organizational measures,
@@ -232,7 +232,7 @@ app.controller('controller', function ($scope) {
         },
         {
             img: "images/user_4_md.png",
-            head: "Managers",
+            head: "Manager",
             body: `
           <ul class="text-left">
               <li>Provides strategic leadership and expertise for the business/department</li>
