@@ -882,14 +882,20 @@ ul.square_bullet li {
     border: 5px solid #357f9c;
 }
 
-#talent_2,#talent_3, #talent_4 {
+#talent_1, #talent_2,#talent_3, #talent_4 {
     width:auto;
     position:absolute;
     top: 20px;
     right: 4%;
 }
-
-
+#talent_1 {
+    top: 55%;
+    left: 1.7%;
+}
+#talent_3 {
+    top: 10px;
+    left: 16%;
+}
 #talent_3 {
     top: 10px;
     left: 16%;

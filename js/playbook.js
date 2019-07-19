@@ -304,6 +304,11 @@ app.controller('controller', function ($scope) {
             "img":"images/talent/talent_4.png",
             "id": "talent_4",
             "aos": "fade-right"
+        },
+        {
+            "img":"images/talent/talent_1.png",
+            "id": "talent_1",
+            "aos": "fade-left"
         }
     ]
     $scope.domains = [{
