@@ -1,20 +1,5 @@
 var del = 0;
 AOS.init();
-/*anime.timeline({
-        loop: true
-    })
-    .add({
-        targets: '.load_text .letter',
-        scale: [0.3, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 600,
-        delay: function (el, i) {
-            return 70 * (i + 1)
-        }
-    });*/
-
 var app = angular.module('app', [])
     .filter('to_trusted', ['$sce', function ($sce) {
         return function (text) {
@@ -26,8 +11,20 @@ app.directive("navMenu", function () {
         restrict: "E",
         scope: {
             active_no: '@'
+           
         },
         templateUrl: "menu.html"
+    };
+});
+
+app.directive("processbar", function () {
+    return {
+        restrict: "E",
+        scope: {
+            active_no: '@',
+            animate: '@'
+        },
+        templateUrl: "components/process_bar.html"
     };
 });
 app.controller('controller', function ($scope) {
@@ -308,7 +305,7 @@ app.controller('controller', function ($scope) {
         {
             "img":"images/talent/talent_1.png",
             "id": "talent_1",
-            "aos": "fade-left"
+            "aos": "fade-right"
         }
     ]
     $scope.domains = [{
@@ -414,7 +411,6 @@ $().ready(function () {
 
     var menuarr = ['#introduction', '#partnering', '#org_design', '#assess'];
     var arrowArr = ['#introduction', '#menu-tile', '#partnering', '#hrteam', '#responsibility', '#org_design',  '#process_overview', '#ghrs_before', '#region_diagram', '#region_table', '#assess', '#design', '#implement'];
-    //var init = $("#navbar").offset().top;
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop();
 

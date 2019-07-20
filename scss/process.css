@@ -28,54 +28,6 @@ li.nav-item {
   height: 80px;
 }
 
-.process_line {
-  margin-left: 2px;
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*align-items: center;*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.process_line .process_bar {
-  border-bottom: 10px solid #007681;
-  min-width: 134px;
-}
-
-.process_line .process_bar.bar2 {
-  min-width: 302px;
-}
-
-.process_line .process_bar .txt {
-  margin-bottom: -5px;
-  font-size: 1.5rem;
-}
-
-.process_line .process_bar.b-green2 {
-  border-color: #279988;
-}
-
-.process_line .process_dotted {
-  border-bottom: 2px dotted #279988;
-  min-width: 32px;
-  margin-bottom: 4px;
-}
-
-.process_bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .small_arrow {
   margin-left: 5px;
   margin-right: -20px;

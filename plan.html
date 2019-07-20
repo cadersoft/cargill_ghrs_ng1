@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container" ng-app="app" ng-controller="menu-controller">
+    <div  class="container" ng-app="app" ng-controller="menu-controller">
         <div>
             <nav-menu active_no="1"></nav-menu>
         </div>
@@ -36,49 +36,13 @@
         </div>
         <div>
             <!-- Line -->
-            <div class="process_line mt-3 ">
-                <div class="process_bar uppercase text_g2"><span class="txt">Explore</span></div>
-                <div class="process_dotted">
-                </div>
-                <div class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
-                </div>
-                <div class="process_dotted">
-                </div>
-                <div class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
-                <div class="process_dotted">
-                </div>
-                <div class="process_bar uppercase text_g2 b-green2"><span class="txt">Implement</span>
-                </div>
-                <div class="process_dotted">
-                </div>
-                <div class="process_bar uppercase text_g2 b-green2"><span class="txt">Mesure</span>
-                </div>
-            </div>
+            <processbar animate="false"></processbar>
             <!-- Arrow -->
-            <div class="process_bar mb-2">
-
-                <div class="p_arrow small_arrow active" onclick="window.location = 'assess.html';"></div>
-                <div class="p_arrow normal_arrow active" onclick="window.location = 'assess.html';">Assess</div>
-
-                <div class="p_arrow medium_arrow active" onclick="window.location = 'analyze.html';"></div>
-                <div class="p_arrow normal_arrow active" onclick="window.location = 'analyze.html';">Analyze</div>
-
-                <div class="p_arrow medium_arrow active" onclick="window.location = 'design.html';"></div>
-                <div class="p_arrow normal_arrow active" onclick="window.location = 'design.html';">Design</div>
-
-                <div class="p_arrow small_arrow "></div>
-                <div class="p_arrow normal_arrow ">Plan</div>
-
-                <div class="p_arrow small_arrow active" onclick="window.location='implement.html'"></div>
-                <div class="p_arrow normal_arrow active" onclick="window.location='implement.html'">Implement</div>
-
-                <div class="p_arrow medium_arrow active" onclick="window.location='sustain.html'"></div>
-                <div class="p_arrow last_arrow active" onclick="window.location='sustain.html'">Sustain</div>
-
-            </div>
+            <process-arrow active="4"></process-arrow>
+            
         </div>
 
-        <div class="darkblue" data-aos="fade-left">
+        <div id="first" class="darkblue" data-aos="fade-left">
             <p>Once the future state organization design is approved, the design team will plan how to best implement
                 the new structure. This includes evaluating risks, change impacts, and the pace of change and creation
                 of materials to support a timely implementation (i.e. communication materials, job descriptions, new
@@ -242,7 +206,8 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 mb-2" id="second">
+        <div id="second" class="space-100"></div>
+        <div class="mb-2" >
             <h2>Plan Phase: Activities by HR Workstream</h2>
         </div>
         <div>
@@ -447,7 +412,7 @@
             </table>
         </div>
 <div class="space-100"></div>
-<h2 class="text-brand heading"> Plan Measurements for Project</h2>
+<h2 id="plan" class="text-brand heading"> Plan Measurements for Project</h2>
 <p>What and How to Measure Success</p>
 
         <table class="table table-bordered" data-aos="fade-left">
@@ -500,7 +465,7 @@
     <script src="plugins/aos.js"></script>
     <script src="plugins/angular.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/assess.js"></script>
+    <script src="js/plan.js"></script>
 
     <script>
         AOS.init();

@@ -6,39 +6,6 @@ $green2: #279988;
 .space{
     height: 80px;
 }
-.process_line
-{
-    margin-left: 2px;
-    margin-bottom: 5px;
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-    .process_bar{
-        border-bottom:10px solid $green1;
-        min-width: 134px;
-        &.bar2{
-           min-width: 302px;
-        }
-        .txt{
-            margin-bottom: -5px;
-            font-size: 1.5rem;
-        }
-        &.b-green2{
-            border-color:$green2;
-        }
-    }
-    .process_dotted{
-        border-bottom:2px dotted $green2;
-        min-width: 32px;
-        margin-bottom: 4px;
-    }
-}
-
-.process_bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .small_arrow {
     margin-left: 5px;

@@ -817,11 +817,11 @@ li.nav-item.active a {
 
 .process_line .process_bar {
   border-bottom: 10px solid #007681;
-  min-width: 134px;
+  min-width: 12%;
 }
 
 .process_line .process_bar.bar2 {
-  min-width: 302px;
+  min-width: 28%;
 }
 
 .process_line .process_bar .txt {
@@ -966,5 +966,9 @@ ul.square_bullet li {
 #talent_4 {
   top: 2%;
   left: 10%;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #005f86;
 }
 /*# sourceMappingURL=playbook.css.map */

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
     <meta name="viewport" content="user-scalable=no" />
     <meta name="HandheldFriendly" content="true" />
     <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.css">
@@ -758,33 +758,9 @@
                     Click below process to learn more.
                 </div>
                 <div data-aos="fade-up">
-                    <div class="process_line mt-3 ">
-                        <div data-aos="fade-left" data-aos-once="true">
-                            <img src="images/cargill_pdp.jpg" alt="">
-                        </div>
-                        <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
-                                class="txt">Explore</spanKey>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
-                            class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
-                            class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
-                        <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
-                            class="process_bar  uppercase text_g2"><span class="txt">Implement</span>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{7 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{8 * 250}}" data-aos-once="true"
-                            class="process_bar  uppercase text_g2"><span class="txt">Measure</span>
-                        </div>
-                    </div>
+                   
+                    <processbar animate="true"></processbar>
+                   
                     <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
                         <!-- animate stop when user clicks
                                 <div class="p_arrow small_arrow"
@@ -866,33 +842,7 @@
                     Click on the buttons to know more.
                 </div>
                 <div data-aos="fade-up">
-                    <div class="process_line mt-3 ">
-                        <div data-aos="fade-left" data-aos-once="true">
-                            <img src="images/cargill_pdp.jpg" alt="">
-                        </div>
-                        <div data-aos="fade-left" data-aos-once="true" class="process_bar uppercase text_g2"><span
-                                class="txt">Explore</span>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{1 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{2 * 250}}" data-aos-once="true"
-                            class="process_bar bar2 uppercase text_g2 b-green2"><span class="txt"> Develop</span>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{3 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{4 * 250}}" data-aos-once="true"
-                            class="process_bar uppercase text_g2"><span class="txt">Plan</span></div>
-                        <div data-aos="fade-left" data-aos-delay="{{5 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{6 * 250}}" data-aos-once="true"
-                            class="process_bar  uppercase text_g2"><span class="txt">Implement</span>
-                        </div>
-                        <div data-aos="fade-left" data-aos-delay="{{7 * 250}}" data-aos-once="true"
-                            class="process_dotted"></div>
-                        <div data-aos="fade-left" data-aos-delay="{{8 * 250}}" data-aos-once="true"
-                            class="process_bar  uppercase text_g2"><span class="txt">Measure</span>
-                        </div>
-                    </div>
+                    <processbar animate="true"></processbar>
                     <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}" data-aos-once="true">
                         <!-- animate stop when user clicks
                                     <div class="p_arrow small_arrow"
@@ -960,7 +910,8 @@
                     <div class="talent">
                         <div ng-repeat="item in talents">
                             
-                            <img id="{{item.id}}" data-aos="{{ item.aos != undefined ? item.aos: 'fade-up'}}" ng-src="{{item.img}}" data-aos-delay="{{$index * 250}}"
+                            <img id="{{item.id}}" data-aos="{{ item.aos != undefined ? item.aos: 'fade-up'}}" ng-src="{{item.img}}" 
+                                data-aos-delay="{{$index * 150}}"
                                 class="full-width" alt="">
 
                         </div>
