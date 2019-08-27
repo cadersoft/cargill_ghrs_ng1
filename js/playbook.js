@@ -1,4 +1,8 @@
 var del = 0;
+setTimeout(function (){
+    window.moveTo(0, 0);
+    window.resizeTo(screen.availWidth, screen.availHeight);
+}, 3000);
 AOS.init();
 var app = angular.module('app', [])
     .filter('to_trusted', ['$sce', function ($sce) {
