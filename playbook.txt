@@ -147,6 +147,7 @@
                                     <li>Sets HR strategy and governance for all people deliverables on project</li>
                                     <li>HR deliverable approver and escalation for HR barriers</li>
                                     <li>Ownership & accountability for HR delivery</li>
+                                    <li>Define project approach: global or regional implementation, governance, and operating model</li>
                                     <li>Communicate key implications from business strategy to the project team</li>
                                     <li>Monitor progress and adjust HR functional strategy as needed to optimize
                                         performance</li>
