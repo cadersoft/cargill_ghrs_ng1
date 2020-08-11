@@ -810,18 +810,20 @@ li.nav-item.active a {
   display: -ms-flexbox;
   display: flex;
   /*align-items: center;*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /*justify-content: center;*/
 }
 
 .process_line .process_bar {
   border-bottom: 10px solid #007681;
-  min-width: 12%;
+  min-width: 14%;
 }
 
 .process_line .process_bar.bar2 {
-  min-width: 28%;
+  min-width: 30%;
+}
+
+.process_line .process_bar.bar4 {
+  min-width: 13%;
 }
 
 .process_line .process_bar .txt {
@@ -970,5 +972,20 @@ ul.square_bullet li {
 
 .dropdown-item.active, .dropdown-item:active {
   background-color: #005f86;
+}
+
+.lf-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lf-right .diagnosis {
+  padding: 5px 20px;
+  background-image: url("../images/arrow_5.png");
+  cursor: default;
 }
 /*# sourceMappingURL=playbook.css.map */

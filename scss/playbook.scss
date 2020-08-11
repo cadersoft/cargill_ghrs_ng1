@@ -771,14 +771,18 @@ li.nav-item.active a {
     margin-bottom: 5px;
     display: flex;
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 
     .process_bar {
         border-bottom: 10px solid $green1;
-        min-width: 12%;
+        min-width: 14%;
 
         &.bar2 {
-            min-width: 28%;
+            min-width: 30%;
+        }
+
+        &.bar4 {
+            min-width: 13%;
         }
 
         .txt {
@@ -908,4 +912,14 @@ ul.square_bullet li {
 .dropdown-item.active, .dropdown-item:active
 {
     background-color: $blue;
+}
+
+.lf-right{
+    display: flex;
+    align-items: center;
+    .diagnosis{
+        padding: 5px 20px;
+        background-image: url('../images/arrow_5.png');
+        cursor: default;
+    }
 }

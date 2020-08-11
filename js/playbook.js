@@ -254,20 +254,12 @@ app.controller('controller', function ($scope) {
 
     },
     {
-        text: "",
-        class: 'd_heading'
-    },
-    {
         text: "IT",
         filling: [0, 0, 3, 1, 1, 0]
     },
     {
         text:"Finance",
-        filling: [3, 3, 3, 2, 2, 2]
-    },
-    {
-        text: "",
-        class: 'd_heading'
+        filling:  [3, 3, 3, 2, 2, 2]
     },
     {
         text: "",
@@ -275,7 +267,7 @@ app.controller('controller', function ($scope) {
     },
     {   
         text:"Communications",
-        filling: [3, 3, 3, 2, 2, 2]
+        filling:  [3, 3, 3, 2, 2, 2]
     }
 
     ]
