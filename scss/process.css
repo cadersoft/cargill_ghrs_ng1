@@ -138,4 +138,9 @@ li.nav-item {
 .table-bordered th, .table-bordered td, .table thead th {
   border-color: #005f86;
 }
+
+.process_line {
+  margin-left: 54px;
+  margin-right: 29px;
+}
 /*# sourceMappingURL=process.css.map */

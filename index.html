@@ -512,19 +512,18 @@
                             <ul>
                                 <li><span class="text-brand">Activity Analysis - </span>Survey, HR Analytics and Data
                                     Reporting.</li>
-                                <li><span class="text-brand">HR Position Coordination - </span>Position Management,
-                                    Gatekeeper of accuracy and quality of PDS and
-                                    Monitors/Tracks approved mappings.</li>
+
                                 <li><span class="text-brand">HR Data Management – DMT - Process Lead </span>Develop plan
                                     for updates to
                                     HR systems approach and execution, documents global requirements, collects and
                                     requests bulk data changes, performs reporting and analytics as needed.</li>
-                                <li><span class="text-brand">HR Data Architect – PDT – </span>System architecture
-                                    changes </li>
+
                                 <li><span class="text-brand">HR Data Management – DMT- HR Data Analyst </span>Execute
                                     loads for
                                     Employee Central New Foundation Data, Position ID Creation/Change, Employee
                                     changes/transfers as groups.</li>
+                                <li><span class="text-brand">HR Data Architect – PDT – </span>System architecture
+                                    changes </li>
                             </ul>
                         </div>
                         <div class="child">
@@ -768,9 +767,7 @@
                 <div data-aos="fade-up">
 
                     <div class="lf-right">
-                        <div class="p_arrow normal_arrow diagnosis">
-                            Diagnosis
-                        </div>
+
                         <div class="right">
                             <processbar animate="true"></processbar>
 
@@ -785,6 +782,15 @@
 
                                 <div data-aos="fade-left" data-aos-once="true">
                                     <img src="images/phases.jpg" alt="">
+                                </div>
+                                <div class="p_arrow small_arrow"
+                                    ng-class="{'visited' : process_arr[1].visited, 'active':process_index == 0}"
+                                    ng-click="process_index = 0; process_arr[0].visited = true;">
+                                </div>
+                                <div class="p_arrow normal_arrow"
+                                    ng-class="{'visited' : process_arr[1].visited, 'active':process_index == 0}"
+                                    ng-click="process_index = 0; process_arr[0].visited = true;">
+                                    Diagnosis
                                 </div>
                                 <!-- Animation will not stop-->
                                 <div class="p_arrow small_arrow"
@@ -861,9 +867,9 @@
                 </div>
                 <div data-aos="fade-up">
                     <div class="lf-right">
-                        <div class="p_arrow normal_arrow diagnosis">
+                        <!-- <div class="p_arrow normal_arrow diagnosis">
                             Diagnosis
-                        </div> 
+                        </div> -->
                         <div class="right">
                             <processbar animate="true"></processbar>
                             <div class="process_bar mb-2" data-aos="fade-up" data-aos-delay="{{7 * 250}}"
@@ -878,6 +884,13 @@
                                     <img src="images/phases.jpg" alt="">
                                 </div>
                                 <!-- Animation will not stop-->
+                                <div class="p_arrow small_arrow animate-side"
+                                    ng-class="{'visited_b' : before_process_arr[3].visited, 'active':before_process_index == 3}"
+                                    ng-click="before_process_index = 3; before_process_arr[3].visited = true; console.log( before_process_arr[3].visited)">
+                                </div>
+                                <div class="p_arrow normal_arrow disabled">
+                                    Diagnosis
+                                </div>
                                 <div class="p_arrow small_arrow animate-side"
                                     ng-class="{'visited_b' : before_process_arr[0].visited, 'active':before_process_index == 0}"
                                     ng-click="before_process_index = 0; before_process_arr[0].visited = true; console.log( before_process_arr[0].visited)">
