@@ -231,6 +231,8 @@ header {
   left: 0;
   right: 0;
   background-color: #279988 !important;
+  -webkit-box-shadow: 0 0 5px 5px #00000054;
+          box-shadow: 0 0 5px 5px #00000054;
 }
 
 .fixed_menu {
