@@ -74,7 +74,7 @@ app.controller('controller', function ($scope) {
         "text": "<h2>Before Assess Phase(Diagnosis)</h2><p>BHR Leader engages the GHRS BRM in the Project Intake process. Considerations:</p><ul><li>Typically in a re-organization, OD is required before the rest of the GHRS team. Therefore, following this initial conversation, it is typical that the GHRS BRM would ensure that an initial consult and SOW development between BHR Leader and GHRS OD. </li><li>This should happen before the assess phase and the project submitted through the Demand Process to Portfolio Review Team.</li><li>Size and complexity of the project is key to clarify requirements (low-high rigor)</li><li>It is important to estimate HR resources for the entire re-organization. At the same time, we also know that work that has not been designed will not have 100% accurate estimations. We assume we can only estimate based on known information, and these estimates will need to be updated as design decisions are made, closer to plan and implementation. </li></ul>"
     },
     {
-        "text": "<h2>Before Plan Phase</h2><p>BHR Leader /Regional Transformation Lead/Project Lead and GHRS BRM should plan to update the resource plan and estimations, based on design decisions and pace of implementation. Considerations:</p><ul>    <li>IT may also need to be brought into the conversation to understand the updated scope of systems updates and plan for the IT project.</li>    <li>PRT approval may be required for increased scope of work or resource estimations. </li>  <li>Define project approach and governance for implementation </li>  <li>If design work is iterative, or regional, more frequent BHR Leader and GHRS BRM resource planning sessions may be required. </li></ul>"
+        "text": "<h2>Before Plan Phase</h2><p>BHR Leader/Regional Transformation Lead/Project Lead and GHRS BRM should plan to update the resource plan and estimations, based on design decisions and pace of implementation. Considerations:</p><ul>    <li>IT may also need to be brought into the conversation to understand the updated scope of systems updates and plan for the IT project.</li>    <li>PRT approval may be required for increased scope of work or resource estimations. </li>  <li>Define project approach and governance for implementation </li>  <li>If design work is iterative, or regional, more frequent BHR Leader and GHRS BRM resource planning sessions may be required. </li></ul>"
     },
     {
         "text": "<h2>Before Implement Phase and ongoing</h2><p>Once the GHRS project team members are assigned, they are able to review and clarify the scope of work they need to deliver. At this point, the project team should update the estimate of their time and confirm their commitment. BHR Leader/Project Lead and GHRS BRM should plan an updated resource plan and estimations.</p>"
@@ -258,6 +258,10 @@ app.controller('controller', function ($scope) {
         filling: [2, 2, 2, 2, 2, 2]
     },
     {
+        text: "Transformation Regional Lead",
+        filling: [0, 3,  2, 2, 2, 2]
+    },
+    {
         text: "",
         class: 'd_heading'
     },
@@ -266,10 +270,7 @@ app.controller('controller', function ($scope) {
         filling: [3, 3, 3, 3, 3, 3]
 
     },
-    {
-        text: "",
-        class: 'd_heading'
-    },
+    
     {
         text: "IT",
         filling: [0, 0, 3, 1, 1, 0]
