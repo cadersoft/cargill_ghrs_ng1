@@ -1,14 +1,20 @@
-
-<nav class="navbar navbar-expand-sm bg-light navbar-dark">
-        <div class="container">
+<nav id="menu" class="navbar navbar-expand-sm ">
+    <div class="container1 flex-1">
+        <div class="flex fcenter">
+            <div>
+                <a href="/">
+                    <img id="logo" src="images/logo.svg" alt="Cargill">
+                </a>
+            </div>
+            <div class="flex-1"></div>
             <ul class="navbar-nav">
+
                 <li class="nav-item">
                     <a class="nav-link scroll_click" href="index.html#introduction">Introduction</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link scroll_click dropdown-toggle" href="#" id="navbardrop"
-                        data-toggle="dropdown">
-                        Team & Stakeholder 
+                    <a class="nav-link scroll_click dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Team & Stakeholder
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item scroll_click" href="index.html#partnering">Partnering with Business</a>
@@ -43,14 +49,15 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown" ng-class="{'active' : active_no==5}">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"  data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         Appendix
                     </a>
                     <div class="dropdown-menu">
-                            <a class="dropdown-item" href="appendix.html">Glossary</a>
-                            <a class="dropdown-item" href="appendix.html#feedback">Feedback</a>
-                        </div>
+                        <a class="dropdown-item" href="appendix.html">Glossary</a>
+                        <a class="dropdown-item" href="appendix.html#feedback">Feedback</a>
+                    </div>
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>

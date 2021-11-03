@@ -5,7 +5,7 @@
   z-index: 1001;
   left: 0;
   right: 0;
-  background-color: #279988 !important;
+  /* background-color: #279988 !important; */
 }
 
 li.nav-item {
@@ -15,9 +15,7 @@ li.nav-item {
   /* margin: 0; */
 }
 
-li.nav-item:hover, li.nav-item.active {
-  background-color: #005f86;
-}
+
 
 li.nav-item {
   padding: 10px 5px;
@@ -230,11 +228,40 @@ header {
   z-index: 1001;
   left: 0;
   right: 0;
-  background-color: #279988 !important;
-  -webkit-box-shadow: 0 0 5px 5px #00000054;
-          box-shadow: 0 0 5px 5px #00000054;
+  /* background-color: #279988 !important; */
+  /* -webkit-box-shadow: 0 0 5px 5px #00000054; */
+          /* box-shadow: 0 0 5px 5px #00000054; */
+}
+.navbar a{
+  color: #333;
+}
+#menu{
+  transition: background-color 0.5s ease;
+}
+#menu.active{
+  background-color: #333 !important; 
+  -webkit-box-shadow: 0 0 5px 5px #00000054; 
+          box-shadow: 0 0 5px 5px #00000054; 
+  color: #fff;
+}
+#menu.active a{
+  color: #fff;
 }
 
+#menu .nav-item.active a, #menu .nav-item:hover a{
+  color: #005f86;
+}
+
+#menu.active .nav-item.active a, #menu.active .nav-item:hover a{
+  color: #279989;
+}
+#logo{
+  height: 42px;
+}
+li.nav-item:hover, li.nav-item.active {
+  /* background-color: #005f86; */
+  color: #005f86;
+}
 .fixed_menu {
   position: fixed;
   top: 0;
@@ -274,7 +301,7 @@ ul.navbar-nav {
 
 li.nav-item:hover,
 li.nav-item.active {
-  background-color: #005f86;
+  /* background-color: #005f86; */
 }
 
 li.nav-item:hover a,
@@ -697,24 +724,21 @@ li.nav-item.active a {
 }
 .item7
 {
-  grid-column: 3;
+  grid-column: 4/6;
   grid-row: 3;
 }
-.item2 img
-{
-  margin-left: 20px ;
-}
+
 .item3 img
 {
   margin-left: 35px ;
   max-width: calc(100% - 35px);
 }
 
-.item6 img
+/* .item6 img
 {
   margin-top: 25px;
-  margin-left: -233px;
-}
+  margin-left: -233px; */
+/* } */
 
 .box4
 {
@@ -722,8 +746,8 @@ li.nav-item.active a {
   width: 150px;
   height: 150px;
   border-radius: 25px 0px 25px 0px;
-  margin-left: 20px;
-  margin-top: 20px;
+  /* margin-left: 20px; */
+  /* margin-top: 20px; */
 }
 
 .box5
@@ -732,7 +756,7 @@ li.nav-item.active a {
   width: 222px;
   height: 128px;
   border-radius: 0px 25px 0px 25px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 /* custom css end */
 
@@ -1068,7 +1092,8 @@ ul.square_bullet li {
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #005f86;
+  /* background-color: #005f86; */
+  background-color: transparent;
 }
 
 .lf-right {
@@ -1086,3 +1111,98 @@ ul.square_bullet li {
   cursor: default;
 }
 /*# sourceMappingURL=playbook.css.map */
+
+.grid-title{
+  border-radius: 30px 0 30px 0;
+  background-color: #658d1b;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.grid-title  .hr{
+    font-size: 68px;
+    font-weight: bolder;
+    line-height: 68px;
+    color: rgba(255,255,255, 0.5);
+    
+}
+
+.grid-title  .name{
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.grid-title  .playbook{
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(255,255,255, 0.7);
+}
+
+.flex{
+  display: flex;
+}
+ .flex-1{
+  flex:1;
+}
+
+.flex .fcenter{
+  justify-content: center;
+  align-items: center;
+}
+
+.container1{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.grid-item{
+  border-radius: 30px 0 30px 0;
+}
+.grid-container{
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.grid-item img.img-fluid {
+  /* border-radius: 30px 0 30px 0; */
+}
+
+.grid-item.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* flex-wrap: wrap; */
+  
+}
+.item1, .item2, .item6{
+  overflow: hidden;
+  width: 100%;
+  border-radius: 30px 0 30px 0;
+}
+.item6{
+  width: 491px;
+}
+.img_panel{
+  width: 200%;
+  display: flex;
+  flex-grow: 1;
+}
+.img_panel .img img{
+  width: 100%;
+}
+.grid-item.item2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.grid-item.item3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+.grid-item.item4.box4 {
+  grid-column-start: 3;
+}
