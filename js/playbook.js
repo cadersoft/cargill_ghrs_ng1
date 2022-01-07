@@ -106,7 +106,7 @@ app.controller('controller', function ($scope) {
         {
             img: "images/tab4.png",
             head: "HR Teams",
-            body: "<p>Pension & Benefits,  HR Analytics, Talent Acquisition,  Time and  Attendance/Vendor, Employee Relations/Industrial Relations,  Compensation,  Employee Experience  Change Management** , HR CBS,  Mobility,  Payroll  Local HRIS/vendor,  HR Global Data and Systems Updates*</p><p>Executes HR domain expertise in the respective service areas to implement organization design and support employee changes </p><p>* May include partnership with IT</p><p>**Includes partnering with Corporate Affairs on communications</p>"
+            body: "<p>Pension & Benefits,  HR Analytics, Talent Acquisition,  Time and  Attendance/Vendor, Employee Relations/Industrial Relations,  Compensation,  Employee Experience  Change Management** , HR CBS,  Mobility,  Payroll  Local HRIS/vendor,  HR Global Data and Systems Updates*</p><p>Executes HR domain expertise in the respective service areas to implement organization design and support employee changes </p><p>* May include partnership with IT</p><p>**Includes partnering with Corporate Communications</p>"
         }
     ];
 
