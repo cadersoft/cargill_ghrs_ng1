@@ -256,7 +256,7 @@ app.controller('controller', function ($scope) {
             filling: [2, 2, 2, 2, 2, 2]
         },
         {
-            text: "Transformation Regional Lead",
+            text: "Regional Transformation Lead",
             filling: [0, 3, 2, 2, 2, 2]
         },
         {
